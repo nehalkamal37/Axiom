@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Axiom Medical Management</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/Full Axiom Logo.png" style="width: 222px; height: 222px;" rel="icon">
+  <link href="assets/img/Full Axiom Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="subsi.css" rel="stylesheet">
+  <link href="career.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+ 
+
+/* Main Content Styles */
+.content {
+  margin-top: 120px;
+}
+
+/* Left Column (Why Box) */
+.why-box {
+  background: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-box a {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+.btn-primary {
+  background-color: #e4e9f0; /* Soft light blue-gray background */
+  background: linear-gradient(145deg, #fff, #e6ebf0); /* Shadow-like gradient */
+
+  color: #333; /* Dark gray text for better readability */
+  border: 1px solid #ccd1d9; /* Add a subtle border */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 2px; /* Slightly rounded corners for a casual feel */
+  text-decoration: none;
+  font-weight: 500; /* Medium font weight for a clean look */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d7dce4; /* Slightly darker on hover */
+  background: linear-gradient(145deg, #f7fafc, #cfd4d9); /* Reverse gradient on hover */
+
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.btn-primary:active {
+  background-color: #ccd1d9; /* Darker for pressed effect */
+  transform: translateY(1px); /* Button sinks slightly when clicked */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: linear-gradient(145deg, #cfd4d9, #e6ebf0); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #96a0aa, #c8cfd6); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #fff, #c8cfd6); /* Shadow-like gradient */
+
+  color: #333; /* Dark text for readability */
+  border: 1px solid #9da5b3; /* Light border for definition */
+  padding: 12px 25px; /* Padding for size */
+  font-size: 1rem; /* Font size for readability */
+  font-weight: 500; /* Medium font weight */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(145deg, #e6ebf0, #cfd4d9); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.btn-secondary:active {
+  background: linear-gradient(145deg, #ccd1d9, #bfc6cf); /* Darker gradient for active state */
+  transform: translateY(1px); /* Slightly sunken effect */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+
+/* Right Column (Icon Boxes) */
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .icon-box {
+    margin-bottom: 20px;
+  }
+}
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 80%; /* Ensure equal height for all boxes */
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 1rem;
+  color: #555;
+}
+.row.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  flex: 1 1 calc(25% - 20px); /* Adjusts box width based on the screen size */
+  margin: 10px;
+}
+
+
+
+</style>
+<style>
+/* General Section Styling */
+.about.section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #eceff1, #c8cfd6); /* Shadow-like gradient */
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-card p, .info-card ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+  }
+}
+
+/*newwwwwwwwwwwww*/
+.info-card ul {
+  padding-left: 20px; /* Space for bullet alignment */
+  list-style: disc;
+  margin: 0; /* Remove default margin */
+  line-height: 1.0; /* Tighter line spacing between list items */
+}
+
+.info-card ul li {
+  margin-bottom: 5px; /* Reduce space between items */
+  font-size: 1rem; /* Adjust font size */
+}
+
+.info-card ul li strong {
+  color: #1a6fc9; /* Highlighted color for bold terms */
+  font-weight: bold;
+  text-transform: uppercase; /* Make bold terms uppercase for emphasis */
+}
+
+/*background thing*/
+
+
+.hero .welcome {
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+  color: #fff; /* White text for contrast */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hero .welcome h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fcf2f2;
+}
+
+.hero .welcome h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+</style>
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="info@axiommedicalmanagement.com            ">info@axiommedicalmanagement.com
+
+          </a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>(800) 555-6789
+
+          </span></i>
+        </div>
+    <!--    <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    -->
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+    <style>
+      /* Logo Styling */
+      .logo {
+        max-width: 100%; /* Ensures the logo scales with its container */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Removes inline padding or extra space */
+        margin: 0 auto; /* Centers the logo if inside a container */
+      }
+    
+      /* Optional: Fixed dimensions for specific use cases */
+      .logo.fixed-size {
+        width: 250px; /* Adjust based on your needs */
+        height: auto; /* Ensures proper scaling */
+      }
+    
+      /* Optional: Styling for logos within header sections */
+      .header-logo {
+        max-width: 200px; /* Ensures consistent scaling within the header */
+        height: auto;
+      }
+    
+      @media (max-width: 768px) {
+        .logo {
+          max-width: 80%; /* Scales down slightly on smaller screens */
+        }
+      }
+    </style>
+    
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo">
+          <h4 class="sitename">Axiom Medical Management</h4>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home<br></a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#privacy">Policies</a></li>
+
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section light-background">
+
+      
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
+
+      <div class="container position-relative">
+
+        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+          <h2>Innovative Management Solutions for Modern Healthcare</h2>
+          <p>Empowering healthcare practices with tailored support and operational excellence.
+          </p>
+        </div><!-- End Welcome -->
+        
+       
+        <div class="content row">
+          <!-- Left Column -->
+          <div class="col-lg-4">
+            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+              <p>
+                Axiom Medical Management provides seamless administrative, operational, and compliance services to healthcare providers. We help practices focus on delivering exceptional patient care while we handle the rest.
+              </p>
+              <div class="text-center mt-3">
+                <a href="#services" class="btn-secondary">Learn About Our Services</a>
+               <!-- <a href="#subsidiaries" class="btn-secondary">Explore Our Subsidiaries</a>
+              -->
+              </div>
+            </div>
+          </div>
+          <!-- Right Column -->
+          <div class="col-lg-8">
+            <div class="row g-3">
+              <div class="col-md-6 col-xl-3">
+                <div class="icon-box">
+                  <i class="bi bi-clipboard-data"></i>
+                  <h4 >Practice Management</h4>
+                  <p>Streamlining day-to-day operations.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <div class="icon-box">
+                  <i class="bi bi-gem"></i>
+                  <h4>IT Integration
+                  </h4>
+                  <p>Leveraging technology for efficiency.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <div class="icon-box">
+                  <i class="bi bi-shield-check"></i>
+                  <h4>Compliance Expertise</h4>
+                  <p>Ensuring adherence to healthcare regulations.</p>
+                </div>
+              </div>
+              <div class="col-md-6 col-xl-3">
+                <div class="icon-box">
+                  <i class="bi bi-graph-up-arrow"></i>
+                  <h4>Growth Strategies
+                  </h4>
+                  <p>Driving business development and patient engagement.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+        
+      </div>
+
+    </section><!-- /Hero Section -->
+
+<!-- About Section -->
+<section id="about" class="about section">
+
+  <div class="container">
+    <div class="row gy-4 gx-5">
+
+      <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="section-title">About Us</h2>
+        <p class="section-intro">
+          Axiom Medical Management provides seamless administrative, operational, and compliance services to healthcare providers. We help practices focus on delivering exceptional patient care while we handle the rest.
+        </p>
+        <div class="info-cards">
+          <div class="info-card">
+            <h4>Who We Are</h4>
+            <p>Axiom Medical Management is a trusted MSO dedicated to providing healthcare providers with tailored solutions that enhance efficiency, ensure compliance, and foster growth. With a focus on operational excellence, we empower practices to achieve their full potential.</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Mission Statement</h4>
+            <p>To revolutionize healthcare management through innovation, expertise, and collaboration, enabling providers to focus on delivering quality care.</p>
+          </div>
+
+          <div class="info-card">
+            <h4>Core Values</h4>
+            <ul>
+              <li><strong>Integrity:</strong> Building trust through transparency.</li>
+              <li><strong>Excellence:</strong> Commitment to superior service.</li>
+              <li><strong>Innovation:</strong> Continuous improvement and forward-thinking solutions.</li>
+              <li><strong>Collaboration:</strong> Partnering for mutual success.</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h4>Milestones</h4>
+            <ul>
+              <li>Founded to address the operational needs of healthcare practices.</li>
+              <li>Expanded services to include IT integration and compliance management.</li>
+              <li>Supported multiple practices across California.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+ <!-- Services Section -->
+ <section id="services" class="services section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Services</h2>
+    <p>Comprehensive Healthcare Management Solutions</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item">
+          <h3>Administrative and Financial Services</h3>
+          <p>Streamlining billing and coding processes. Financial planning and revenue cycle management.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item">
+          <h3>Technology and IT Support</h3>
+          <p>Implementation of electronic medical records (EMR). Custom dashboards for analytics and reporting. Patient engagement tools such as appointment reminders and telehealth integration.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item">
+          <h3>Compliance and Risk Management</h3>
+          <p>Internal audits and staff training. Adherence to HIPAA, OSHA, and other regulatory frameworks.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item">
+          <h3>Practice Growth and Marketing Strategies</h3>
+          <p>Digital marketing services tailored to healthcare. Patient satisfaction and retention programs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Services Section -->
+
+<style>
+  .section-title p {
+  font-size: 1.2rem; /* Adjust font size */
+  color: #333; /* Use a subtle dark color */
+  background: linear-gradient(to right, #007bff, #00c6ff); /* Add a gradient background */
+  color: white; /* Make text color white for better contrast */
+  padding: 10px 20px; /* Add padding for a button-like effect */
+  border-radius: 30px; /* Rounded edges for a modern look */
+  text-align: center; /* Center align the text */
+  display: inline-block; /* Make it inline for better placement */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+</style>
+</section>
+
+
+   <!-- Careers Section -->
+<section id="careers" class="careers section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Careers</h2>
+      <p>Join our passionate team and redefine healthcare management.</p>
+    </div>
+
+    <div class="row gy-4">
+      <!-- Why Join Axiom -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="career-card">
+          <h3>Why Join Axiom?</h3>
+          <p>Become part of a vibrant, innovative team that is revolutionizing healthcare management. Work with passionate professionals who value growth, collaboration, and impact.</p>
+        </div>
+      </div>
+
+      <!-- Employee Benefits -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="career-card">
+          <h3>Employee Benefits</h3>
+          <ul>
+            <li>💼 Competitive compensation packages.</li>
+            <li>📚 Professional development opportunities.</li>
+            <li>⏳ Flexible and hybrid working conditions.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Open Positions -->
+      <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="career-card">
+          <h3>Open Positions</h3>
+          <p>Explore exciting opportunities and take the next step in your career:</p>
+          <ul>
+            <li>🌟 Billing Specialist</li>
+            <li>💻 IT Systems Administrator</li>
+            <li>📋 Other exciting roles with detailed application instructions.</li>
+          </ul>
+          <a href="#apply" class="btn-apply">Apply Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  /* General Section Styling */
+.news.section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+
+
+/* News Cards */
+.news-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.news-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.news-card ul li {
+  margin-bottom: 10px;
+}
+
+.news-card ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+.news-card ul li a:hover {
+  color: #0056b3;
+}
+
+/* Events Styling */
+.news-card.events {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #fff;
+}
+
+.news-card.events h3 {
+  color: #fff;
+}
+
+.news-card.events ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.news-card.events ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-card {
+    padding: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+}
+
+</style>
+<!-- News & Insights Section -->
+<section id="news" class="news section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>News & Insights</h2>
+      <p>Stay updated with the latest news and industry insights.</p>
+    </div>
+
+    <div class="row gy-4">
+      <!-- Latest News -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="news-card">
+          <h3>Latest News</h3>
+          <ul>
+            <li><a href="#">Axiom Launches New Compliance Training Program for Providers</a></li>
+            <li><a href="#">California Rheumatology Institute Opens New Location</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Industry Insights Blog -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="news-card">
+          <h3>Industry Insights Blog</h3>
+          <ul>
+            <li><a href="#">Top 5 Tips for Streamlining Healthcare Operations</a></li>
+            <li><a href="#">Leveraging Technology to Improve Patient Outcomes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Events -->
+      <div class="col-12" data-aos="fade-up" data-aos-delay="300">
+        <div class="news-card events">
+          <h3>Events</h3>
+          <ul>
+            <li><a href="#">Webinar: Navigating Regulatory Challenges – March 15, 2025</a></li>
+            <li><a href="#">Healthcare Operations Conference – April 20, 2025</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Get in touch with us for any inquiries or support.</p>
+      </div><!-- End Section Title -->
+
+      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
+        <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-118.2437!3d34.0522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zMzTCsDAzJzA3LjkiTiAxMTjCsDE0JzMzLjciVw!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div><!-- End Google Maps -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h3>Corporate Office Address</h3>
+                <p>123 Healthcare Plaza, Los Angeles, CA 90001</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>(800) 555-6789</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>info@axiommedicalmanagement.com</p>
+              </div>
+            </div><!-- End Info Item -->
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="tel" name="phone" class="form-control" placeholder="Your Phone" required="">
+                </div>
+
+               
+              
+             
+                <button type="submit">Send Message</button>
+        </div>
+
+            </div>
+            </form></div></div></div></section>
+
+    <!-- Privacy Policy Section -->
+    <section id="privacy" class="privacy section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Privacy Policy</h2>
+          <p>We are committed to safeguarding your data. Learn about our practices, HIPAA compliance, and privacy measures.</p>
+        </div>
+      </div>
+    </section><!-- End Privacy Policy Section -->
+
+    <!-- Terms & Conditions Section -->
+    <section id="terms" class="terms section">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Terms & Conditions</h2>
+          <p>Understand the terms for using our website and accessing our services.</p>
+        </div>
+      </div>
+    </section><!-- End Terms & Conditions Section -->
+
+    
+    <!-- oldddddddd Section -->
+   
+
+
+   
+  </main>
+<!-- Footer --
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Medilab</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span>info@example.com</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Medilab</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+      </div>
+    </div>
+
+  </footer>
+-->
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
