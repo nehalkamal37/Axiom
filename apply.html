@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Axiom Medical Management</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/Full Axiom Logo.png" style="width: 222px; height: 222px;" rel="icon">
+  <link href="assets/img/Full Axiom Logo.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="subsi.css" rel="stylesheet">
+  <link href="career.css" rel="stylesheet">
+
+
+  <!-- =======================================================
+  * Template Name: Medilab
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Updated: Aug 07 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<style>
+ 
+body{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  color: var(--default-color);
+}
+/* Main Content Styles */
+.content {
+  margin-top: 120px;
+}
+
+/* Left Column (Why Box) */
+.why-box {
+  background: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-box a {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+.btn-primary {
+  background-color: #e4e9f0; /* Soft light blue-gray background */
+  background: linear-gradient(145deg, #fff, #e6ebf0); /* Shadow-like gradient */
+
+  color: #333; /* Dark gray text for better readability */
+  border: 1px solid #ccd1d9; /* Add a subtle border */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 2px; /* Slightly rounded corners for a casual feel */
+  text-decoration: none;
+  font-weight: 500; /* Medium font weight for a clean look */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d7dce4; /* Slightly darker on hover */
+  background: linear-gradient(145deg, #f7fafc, #cfd4d9); /* Reverse gradient on hover */
+
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.btn-primary:active {
+  background-color: #ccd1d9; /* Darker for pressed effect */
+  transform: translateY(1px); /* Button sinks slightly when clicked */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: linear-gradient(145deg, #cfd4d9, #e6ebf0); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #96a0aa, #c8cfd6); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #fff, #c8cfd6); /* Shadow-like gradient */
+
+  color: #333; /* Dark text for readability */
+  border: 1px solid #9da5b3; /* Light border for definition */
+  padding: 12px 25px; /* Padding for size */
+  font-size: 1rem; /* Font size for readability */
+  font-weight: 500; /* Medium font weight */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(145deg, #e6ebf0, #cfd4d9); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.btn-secondary:active {
+  background: linear-gradient(145deg, #ccd1d9, #bfc6cf); /* Darker gradient for active state */
+  transform: translateY(1px); /* Slightly sunken effect */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+
+/* Right Column (Icon Boxes) */
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .icon-box {
+    margin-bottom: 20px;
+  }
+}
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 80%; /* Ensure equal height for all boxes */
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 1rem;
+  color: #555;
+}
+.row.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  flex: 1 1 calc(25% - 20px); /* Adjusts box width based on the screen size */
+  margin: 10px;
+}
+
+
+
+</style>
+<style>
+/* General Section Styling */
+.about.section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #eceff1, #c8cfd6); /* Shadow-like gradient */
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-card p, .info-card ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+  }
+}
+
+/*newwwwwwwwwwwww*/
+.info-card ul {
+  padding-left: 20px; /* Space for bullet alignment */
+  list-style: disc;
+  margin: 0; /* Remove default margin */
+  line-height: 1.0; /* Tighter line spacing between list items */
+}
+
+.info-card ul li {
+  margin-bottom: 5px; /* Reduce space between items */
+  font-size: 1rem; /* Adjust font size */
+}
+
+.info-card ul li strong {
+  color: #1a6fc9; /* Highlighted color for bold terms */
+  font-weight: bold;
+  text-transform: uppercase; /* Make bold terms uppercase for emphasis */
+}
+
+/*background thing*/
+
+
+.hero .welcome {
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+  color: #fff; /* White text for contrast */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hero .welcome h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fcf2f2;
+}
+
+.hero .welcome h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+</style>
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="contact-info d-flex align-items-center">
+          <i class="bi bi-envelope d-flex align-items-center"><a href="info@axiommedicalmanagement.com            ">info@axiommedicalmanagement.com
+
+          </a></i>
+          <i class="bi bi-phone d-flex align-items-center ms-4"><span>(800) 555-6789
+
+          </span></i>
+        </div>
+    <!--    <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    -->
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+    <style>
+      /* Logo Styling */
+      .logo {
+        max-width: 100%; /* Ensures the logo scales with its container */
+        height: auto; /* Maintains the aspect ratio */
+        display: block; /* Removes inline padding or extra space */
+        margin: 0 auto; /* Centers the logo if inside a container */
+      }
+    
+      /* Optional: Fixed dimensions for specific use cases */
+      .logo.fixed-size {
+        width: 250px; /* Adjust based on your needs */
+        height: auto; /* Ensures proper scaling */
+      }
+    
+      /* Optional: Styling for logos within header sections */
+      .header-logo {
+        max-width: 200px; /* Ensures consistent scaling within the header */
+        height: auto;
+      }
+    
+      @media (max-width: 768px) {
+        .logo {
+          max-width: 80%; /* Scales down slightly on smaller screens */
+        }
+      }
+    </style>
+    
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <!-- Uncomment the line below if you also wish to use an image logo -->
+          <img src="assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo">
+          <h4 class="sitename">Axiom Medical Management</h4>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="index.html" class="active">Home<br></a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#careers">Careers</a></li>
+            <li><a href="index.html#news">News</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#privacy">Policies</a></li>
+
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero d-flex align-items-center justify-content-center" style="height: 70vh; background: #97c1ee; color: #fff;">
+      <div class="container text-center">
+        <h1 style="color:#333">"We will provide you with the necessary information as soon as possible,thank you."</h1>
+        <p class="lead mt-3" style="font-size: 1.2rem;">
+        </p>
+        <a href="index.html#services" class="btn btn-primary mt-4">Explore Services</a>
+
+          
+      </div>
+    </section>
+  </main>
+  
+        </body>
+        </html>
