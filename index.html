@@ -31,13 +31,6 @@
   <link href="career.css" rel="stylesheet">
 
 
-  <!-- =======================================================
-  * Template Name: Medilab
-  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 <style>
  
@@ -397,8 +390,8 @@ body{
         <nav id="navmenu" class="navmenu">
           <ul>
             <li><a href="#hero" class="active">Home<br></a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="services/about.html">About</a></li>
+            <li><a href="services/services.html">Services</a></li>
             <li><a href="#careers">Careers</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -535,6 +528,9 @@ body{
     </div>
   </div>
   
+
+
+
  <!-- Services Section -->
  <section id="services" class="services section">
 
@@ -581,6 +577,7 @@ body{
 </section>
 <!-- /Services Section -->
 
+
 <style>
   .section-title p {
   font-size: 1.2rem; /* Adjust font size */
@@ -598,12 +595,54 @@ body{
 </section>
 
 
-   <!-- Careers Section -->
+  
+
+
+<style>
+/* Improved Styling for Job Listings */
+.career-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-listing {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.job-listing h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.btn-apply {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-apply:hover {
+  background: #0056b3;
+}
+</style>
+
+<!--  updates  -->
+<!-- Careers Section -->
 <section id="careers" class="careers section">
   <div class="container" data-aos="fade-up">
     <div class="section-title">
-      <h2>Careers</h2>
-      <p>Join our passionate team and redefine healthcare management.</p>
+      <h2>Careers at Axiom Management</h2>
+      <p>Join our team and be part of an innovative company transforming healthcare management.</p>
     </div>
 
     <div class="row gy-4">
@@ -611,7 +650,7 @@ body{
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
         <div class="career-card">
           <h3>Why Join Axiom?</h3>
-          <p>Become part of a vibrant, innovative team that is revolutionizing healthcare management. Work with passionate professionals who value growth, collaboration, and impact.</p>
+          <p>Be part of a forward-thinking team that values collaboration, innovation, and career growth. We empower our employees with opportunities to make a real impact in healthcare management.</p>
         </div>
       </div>
 
@@ -620,30 +659,120 @@ body{
         <div class="career-card">
           <h3>Employee Benefits</h3>
           <ul>
-            <li>💼 Competitive compensation packages.</li>
-            <li>📚 Professional development opportunities.</li>
-            <li>⏳ Flexible and hybrid working conditions.</li>
+            <li><strong>Competitive Compensation:</strong> Industry-leading salary packages.</li>
+            <li><strong>Career Development:</strong> Access to training, mentorship, and growth opportunities.</li>
+            <li><strong>Flexible Work Options:</strong> Choose from remote, hybrid, or in-office roles.</li>
           </ul>
         </div>
       </div>
 
-      <!-- Open Positions -->
+      <!-- Collapsible Job Openings Section -->
       <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-        <div class="career-card">
-          <h3>Open Positions</h3>
-          <p>Explore exciting opportunities and take the next step in your career:</p>
-          <ul>
-            <li>🌟 Billing Specialist</li>
-            <li>💻 IT Systems Administrator</li>
-            <li>📋 Other exciting roles with detailed application instructions.</li>
-          </ul>
-          <a href="apply.html" class="btn-apply">Apply Now</a>
+        <div class="career-card collapsible" onclick="toggleJobs()">
+          <h3>Current Job Openings</h3>
+          <p>Click to view available positions</p>
         </div>
+
+        <div id="job-listings" class="job-listing-container hidden">
+          <!-- Job Listing - Billing Specialist -->
+          <div class="job-listing">
+            <h4>Billing Specialist</h4>
+            <p><strong> Location:</strong> Remote | <strong>💼 Type:</strong> Full-Time</p>
+            <p>Manage and optimize billing operations to ensure efficiency and accuracy in healthcare transactions.</p>
+            <a href="careers.html" class="btn-apply">Apply Now</a>
+          </div>
+
+          <!-- Job Listing - IT Systems Administrator -->
+          <div class="job-listing">
+            <h4>IT Systems Administrator</h4>
+            <p><strong> Location:</strong> Hybrid | <strong>💼 Type:</strong> Full-Time</p>
+            <p>Oversee and maintain IT infrastructure, ensuring security, performance, and compliance with industry standards.</p>
+            <a href="apply.html" class="btn-apply">Apply Now</a>
+          </div>
+
+          <!-- Job Listing - More Positions -->
+          <div class="job-listing">
+            <h4>Other Exciting Roles</h4>
+            <p>We are always looking for top talent across various departments. Check our latest openings!</p>
+            <a href="careers.html" class="btn-apply">View All Positions</a>
+          </div>
+        </div>
+        
       </div>
     </div>
   </div>
 </section>
 
+<!-- JavaScript for Collapse/Expand -->
+<script>
+function toggleJobs() {
+  var jobList = document.getElementById("job-listings");
+  jobList.classList.toggle("hidden");
+}
+</script>
+
+<!-- CSS for Styling -->
+<style>
+/* General Styling */
+.career-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.career-card:hover {
+  background: #e9ecef;
+}
+
+/* Job Listings */
+.job-listing-container {
+  display: none;
+  margin-top: 10px;
+}
+
+.job-listing-container.hidden {
+  display: none;
+}
+
+.job-listing-container:not(.hidden) {
+  display: block;
+}
+
+.job-listing {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.job-listing h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.btn-apply {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-apply:hover {
+  background: #0056b3;
+}
+</style>
+
+
+
+<!--   -->
 
 <style>
   /* General Section Styling */
