@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -395,6 +396,7 @@ body{
             <li><a class="active" href="index.html#careers">Careers</a></li>
             <li><a href="index.html#news">News</a></li>
             <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="services/practice.html">Practices</a></li>
             <li><a href="index.html#privacy">Policies</a></li>
 
           </ul>
@@ -518,6 +520,7 @@ body{
       
       <!-- Hero Section -->
       <div class="career-hero">
+        <img src="assets/img/Abbreviated Axiom Logo.png" style="height: 188px; margin-bottom: 33px;">
         <h1>Join Us. Be You.</h1>
         <p>Innovate. Collaborate. Make an Impact.</p>
       </div>
@@ -531,7 +534,7 @@ body{
       <!-- Job Openings (Collapsible) -->
       <div class="career-card collapsible" onclick="toggleJobs()">
         <h3>Current Job Openings</h3>
-        <p>Click to explore available positions</p>
+        <p><i class="fas fa-arrow-right"></i> Click to explore available positions</p>
       </div>
 
      
@@ -540,8 +543,11 @@ body{
 
     <!-- Growth Marketing Lead -->
     <div class="job-listing">
-      <h4>Growth Marketing Lead, South East Asia</h4>
-      <p><strong> Location:</strong> Manila, NCR, Philippines (Hybrid) | <strong>💼 Type:</strong> Full-Time</p>
+      <h4>Growth Marketing Lead, South East Asia
+</h4>
+      <p><strong> Location:</strong> Manila, NCR, Philippines (Hybrid) | <strong> Type:</strong> Full-Time
+      <i class="fa-regular fa-heart fav-icon" onclick="toggleFavourite(this)" title="Mark as Favorite"></i>
+</p>
       <p>Lead marketing strategies and drive growth initiatives in the South East Asia region.</p>
       <a href="apply.html" class="btn-apply">Apply Now</a>
     </div>
@@ -549,7 +555,9 @@ body{
     <!-- Senior Brand Designer - Campaigns -->
     <div class="job-listing">
       <h4>Senior Brand Designer - Campaigns</h4>
-      <p><strong> Location:</strong> Manila, NCR, Philippines (Hybrid) | <strong>💼 Type:</strong> Full-Time</p>
+      <p><strong> Location:</strong> Manila, NCR, Philippines (Hybrid) | <strong> Type:</strong> Full-Time
+        <i class="fa-regular fa-heart fav-icon" onclick="toggleFavourite(this)" title="Mark as Favorite"></i>
+      </p>
       <p>Develop and execute high-impact branding campaigns that align with business goals.</p>
       <a href="apply.html" class="btn-apply">Apply Now</a>
     </div>
@@ -557,7 +565,9 @@ body{
     <!-- People Helpdesk Support -->
     <div class="job-listing">
       <h4>People Helpdesk Support</h4>
-      <p><strong> Location:</strong> Makati, NCR, Philippines (Hybrid) | <strong>💼 Type:</strong> Full-Time</p>
+      <p><strong> Location:</strong> Makati, NCR, Philippines (Hybrid) | <strong> Type:</strong> Full-Time
+        <i class="fa-regular fa-heart fav-icon" onclick="toggleFavourite(this)" title="Mark as Favorite"></i>
+      </p>
       <p>Assist employees with HR inquiries, policies, and support requests in a fast-paced environment.</p>
       <a href="apply.html" class="btn-apply">Apply Now</a>
     </div>
@@ -565,7 +575,9 @@ body{
     <!-- IT Systems Administrator -->
     <div class="job-listing">
       <h4>IT Systems Administrator</h4>
-      <p><strong> Location:</strong> Hybrid | <strong>💼 Type:</strong> Full-Time</p>
+      <p><strong> Location:</strong> Hybrid | <strong> Type:</strong> Full-Time
+        <i class="fa-regular fa-heart fav-icon" onclick="toggleFavourite(this)" title="Mark as Favorite"></i>
+      </p>
       <p>Oversee and maintain IT infrastructure, ensuring security, performance, and compliance with industry standards.</p>
       <a href="apply.html" class="btn-apply">Apply Now</a>
     </div>
@@ -574,6 +586,7 @@ body{
   
     </div>
   </section>
+
 
   <!-- JavaScript for Collapse/Expand -->
   <script>
@@ -596,7 +609,7 @@ body{
       background: black;
       color: white;
       text-align: center;
-      padding: 80px 20px;
+      padding: 20px 20px;
       font-size: 24px;
     }
 
@@ -680,6 +693,21 @@ body{
     }
   </style>
 
+<!-- style for heart   -->
+ <style>
+  .fav-icon {
+  cursor: pointer;
+  margin-left: 10px;
+  transition: color 0.3s;
+}
+
+.fav-icon.favorited {
+  color: red; /* Change color when favorited */
+}
+
+ </style>
+
+
 
   
   <!-- JavaScript for Collapse/Expand -->
@@ -689,6 +717,23 @@ body{
       jobList.classList.toggle("active");
     }
   </script>
+
+<script>
+  // Toggle the visibility of job listings
+  function toggleJobs() {
+    var jobListings = document.getElementById('job-listings');
+    jobListings.classList.toggle('hidden');
+  }
+
+  // Toggle the favorite status
+  function toggleFavourite(element) {
+    // Prevent the click from triggering parent onClick events
+    event.stopPropagation();
+    element.classList.toggle('favorited');
+    // Optional: Save the favorite state in localStorage or update the backend
+  }
+</script>
+
 
 </body>
 </html>

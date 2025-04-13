@@ -1,0 +1,91 @@
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+ /* box-sizing: border-box;*/
+}
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title h2 {
+  font-size: 2.0em;
+  margin-bottom: 10px;
+}
+.section-title p {
+  color: #777;
+  font-size: 1.1em;
+}
+/* Row & Columns */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.col-lg-6 {
+  flex: 1 1 calc(50% - 20px);
+  position: relative;
+}
+/* Service Item Styles */
+.service-item {
+  position: relative;
+  padding: 40px 20px;
+  color: #fff;
+  min-height: 250px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Overlay (Optional) for better text readability */
+.service-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+/* Service Item Content */
+.service-item h3 {
+ 
+color: rgb(212, 212, 228);
+}
+.service-item h3, .service-item p {
+  position: relative;
+  z-index: 2;
+}
+/* Background Images for Each Service */
+.admin-financial {
+  background-image: url('../assets/img/services/adm.jpg'); /* Adjust the path as needed */
+}
+.tech-it-support {
+  background-image: url('../assets/img/services/tech\ support.jpg');
+}
+.compliance-risk {
+  background-image: url('../assets/img/services/comp.webp');
+}
+.marketing-strategies {
+  background-image: url('../assets/img/services/grow.jpg');
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .col-lg-6 {
+    flex: 1 1 100%;
+  }
+}

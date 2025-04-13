@@ -1,0 +1,241 @@
+
+/***********************************************************
+ * 1) Base & Layout
+ ************************************************************/
+body {
+  padding-top: 80px; /* Because the header is fixed */
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+  /* ------------------------------
+         Hero Section (For Demo)
+      ------------------------------ */
+      .hero {
+        height: 90vh;
+        background: url('../assets/img/hero-bg.jpg') no-repeat center center/cover;
+      }
+      .hero .intro {
+        color: #fff;
+      }
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/***********************************************************
+ * 2) Header (Provided by Your Existing Code)
+ ************************************************************/
+.site-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+.site-logo img {
+  max-height: 50px;
+  vertical-align: middle;
+}
+.sitename {
+  margin-left: 10px;
+  font-size: 1.2em;
+  display: inline-block;
+}
+.site-menu li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.site-menu li a {
+  text-decoration: none;
+  color: #333 !important;
+  font-weight: 600;
+}
+.site-menu li a.active2 {
+  color: #3b84b4 !important;
+}
+.site-mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #fff;
+  z-index: 2000;
+  overflow-y: auto;
+  padding: 20px;
+}
+.site-mobile-menu.active {
+  display: block;
+}
+.site-mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.site-mobile-menu-close {
+  font-size: 28px;
+  cursor: pointer;
+}
+.site-mobile-menu-body ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+.site-mobile-menu-body ul li {
+  margin-bottom: 15px;
+}
+.site-mobile-menu-body ul li a {
+  text-decoration: none;
+  color: #333 !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+@media (min-width: 992px) {
+  .site-mobile-menu,
+  .site-menu-toggle {
+    display: none !important;
+  }
+}
+
+/***********************************************************
+ * 3) Hero Section (Custom)
+ ************************************************************/
+.hero-section {
+  background: #f7f9fc url('../assets/img/hero-pattern.png') no-repeat top right;
+  padding: 60px 0 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+.hero-section .container {
+  position: relative;
+  z-index: 2;
+}
+.hero-section h1 {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.hero-section p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 700px;
+}
+/* Optional hero image */
+.hero-illustration {
+  max-width: 100%;
+  height: 399px;
+  margin-top: 30px;
+}
+
+/***********************************************************
+ * 4) Services / Cards Section
+ ************************************************************/
+.services-section {
+  background: #fff;
+  padding: 60px 0;
+}
+.services-section h2 {
+  font-size: 2rem;
+  color: #3b84b4 !important;
+
+  margin-bottom: 30px;
+  text-align: center;
+}
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+.service-card {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 30px;
+  flex: 1 1 calc(25% - 30px); /* 4 columns on large screens */
+  max-width: 300px;          /* Optionally limit width */
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-5px);
+}
+.service-card i {
+  font-size: 2rem;
+  color: #3b84b4;
+  margin-bottom: 15px;
+}
+.service-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+.service-card p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+@media (max-width: 992px) {
+  .service-card {
+    flex: 1 1 calc(50% - 30px); /* 2 columns on tablets */
+  }
+}
+@media (max-width: 576px) {
+  .service-card {
+    flex: 1 1 100%; /* 1 column on mobile */
+  }
+}
+
+/***********************************************************
+ * 5) Call-to-Action
+ ************************************************************/
+.cta-section {
+  background-color: #3b84b4;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+.cta-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: rgb(24, 24, 24);
+}
+.cta-section p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.cta-section .btn-cta {
+  background-color: #fff;
+  color: #3b84b4;
+  padding: 12px 30px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+.cta-section .btn-cta:hover {
+  background-color: #f2f2f2;
+}
+
+/***********************************************************
+ * 6) Footer (Provided by Your Existing Code)
+ ************************************************************/
+.site-footer {
+  background: #f7f7f7;
+  padding: 40px 0;
+  margin-top: 0;
+}
+.quick-contact-info {
+  margin-bottom: 20px;
+}
+.icon-wrap {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #3b84b4;
+}
+.caption {
+  font-size: 0.9rem;
+  color: #555;
+}

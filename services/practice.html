@@ -13,237 +13,8 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <style>
-      /***********************************************************
-       * 1) Base & Layout
-       ************************************************************/
-      body {
-        padding-top: 80px; /* Because the header is fixed */
-        font-family: Arial, sans-serif;
-        margin: 0;
-      }
-      .container {
-        max-width: 1200px;
-        margin: auto;
-        padding: 0 15px;
-      }
-
-      /***********************************************************
-       * 2) Header (Provided by Your Existing Code)
-       ************************************************************/
-      .site-navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background-color: #fff;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        z-index: 1000;
-      }
-      .site-logo img {
-        max-height: 50px;
-        vertical-align: middle;
-      }
-      .sitename {
-        margin-left: 10px;
-        font-size: 1.2em;
-        display: inline-block;
-      }
-      .site-menu li {
-        list-style: none;
-        display: inline-block;
-        margin-left: 20px;
-      }
-      .site-menu li a {
-        text-decoration: none;
-        color: #333 !important;
-        font-weight: 600;
-      }
-      .site-menu li a.active2 {
-        color: #3b84b4 !important;
-      }
-      .site-mobile-menu {
-        display: none;
-        position: fixed;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: #fff;
-        z-index: 2000;
-        overflow-y: auto;
-        padding: 20px;
-      }
-      .site-mobile-menu.active {
-        display: block;
-      }
-      .site-mobile-menu-header {
-        display: flex;
-        justify-content: flex-end;
-      }
-      .site-mobile-menu-close {
-        font-size: 28px;
-        cursor: pointer;
-      }
-      .site-mobile-menu-body ul {
-        list-style: none;
-        padding: 0;
-        margin-top: 20px;
-      }
-      .site-mobile-menu-body ul li {
-        margin-bottom: 15px;
-      }
-      .site-mobile-menu-body ul li a {
-        text-decoration: none;
-        color: #333 !important;
-        font-size: 1.2rem;
-        font-weight: 600;
-      }
-      @media (min-width: 992px) {
-        .site-mobile-menu,
-        .site-menu-toggle {
-          display: none !important;
-        }
-      }
-
-      /***********************************************************
-       * 3) Hero Section (Custom)
-       ************************************************************/
-      .hero-section {
-        background: #f7f9fc url('../assets/img/hero-pattern.png') no-repeat top right;
-        padding: 60px 0 80px 0;
-        position: relative;
-        overflow: hidden;
-      }
-      .hero-section .container {
-        position: relative;
-        z-index: 2;
-      }
-      .hero-section h1 {
-        font-size: 2.5rem;
-        color: #333;
-        font-weight: 700;
-        margin-bottom: 10px;
-      }
-      .hero-section p {
-        font-size: 1.1rem;
-        color: #555;
-        max-width: 700px;
-      }
-      /* Optional hero image */
-      .hero-illustration {
-        max-width: 100%;
-        height: auto;
-        margin-top: 30px;
-      }
-
-      /***********************************************************
-       * 4) Services / Cards Section
-       ************************************************************/
-      .services-section {
-        background: #fff;
-        padding: 60px 0;
-      }
-      .services-section h2 {
-        font-size: 2rem;
-        color: #2D8A85;
-        margin-bottom: 30px;
-        text-align: center;
-      }
-      .services-container {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-        justify-content: center;
-      }
-      .service-card {
-        background: #ffffff;
-        border-radius: 10px;
-        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-        padding: 30px;
-        flex: 1 1 calc(25% - 30px); /* 4 columns on large screens */
-        max-width: 300px;          /* Optionally limit width */
-        text-align: left;
-        transition: transform 0.3s ease;
-      }
-      .service-card:hover {
-        transform: translateY(-5px);
-      }
-      .service-card i {
-        font-size: 2rem;
-        color: #2D8A85;
-        margin-bottom: 15px;
-      }
-      .service-card h4 {
-        font-size: 1.25rem;
-        margin-bottom: 10px;
-        color: #333;
-      }
-      .service-card p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-        color: #555;
-      }
-      @media (max-width: 992px) {
-        .service-card {
-          flex: 1 1 calc(50% - 30px); /* 2 columns on tablets */
-        }
-      }
-      @media (max-width: 576px) {
-        .service-card {
-          flex: 1 1 100%; /* 1 column on mobile */
-        }
-      }
-
-      /***********************************************************
-       * 5) Call-to-Action
-       ************************************************************/
-      .cta-section {
-        background-color: #2D8A85;
-        color: #fff;
-        padding: 40px 20px;
-        text-align: center;
-      }
-      .cta-section h2 {
-        margin-bottom: 15px;
-        font-size: 1.8rem;
-      }
-      .cta-section p {
-        margin-bottom: 20px;
-        font-size: 1rem;
-      }
-      .cta-section .btn-cta {
-        background-color: #fff;
-        color: #2D8A85;
-        padding: 12px 30px;
-        border-radius: 25px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background-color 0.3s ease;
-      }
-      .cta-section .btn-cta:hover {
-        background-color: #f2f2f2;
-      }
-
-      /***********************************************************
-       * 6) Footer (Provided by Your Existing Code)
-       ************************************************************/
-      .site-footer {
-        background: #f7f7f7;
-        padding: 40px 0;
-        margin-top: 0;
-      }
-      .quick-contact-info {
-        margin-bottom: 20px;
-      }
-      .icon-wrap {
-        font-size: 2rem;
-        margin-bottom: 10px;
-        color: #2D8A85;
-      }
-      .caption {
-        font-size: 0.9rem;
-        color: #555;
-      }
-    </style>
+    <link rel="stylesheet" href="../styles/practices.css">
+   
   </head>
   <body>
     
@@ -289,11 +60,12 @@
               <ul class="site-menu main-menu js-clone-nav ml-auto">
                 <li><a href="../index.html" class="nav-link">Home</a></li>
                 <li><a href="../services/about.html">About</a></li>
-                <li><a href="services.html" class="nav-link active2">Services</a></li>
+                <li><a href="services.html" >Services</a></li>
                 <li><a href="../careers.html">Careers</a></li>
                 <li><a href="../index.html#news">News</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
-                <li><a href="../index.html#privacy">Policies</a></li>
+                <li><a href="#" class="nav-link active2" >practices</a></li>
+
               </ul>
             </nav>
           </div>
@@ -301,7 +73,20 @@
       </div>
     </header>
     
-    <!-- Hero Section -->
+        <!-- Demo Hero Section -->
+        <div class="hero">
+          <div class="container">
+            <div class="row align-items-center justify-content-center" style="height: 90vh;">
+              <div class="col-lg-8 intro text-center">
+                <h1 class="text-white">Practice Management And Analytics</h1>
+                <a href="index.html" style="color: #4e83bd;"></a> 
+                <span class="mx-3 text-white"></span> 
+                <strong class="text-white"></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+    <!-- Hero Section 
     <section class="hero-section">
       <div class="container">
         <h1>Practice Management &amp; Analytics</h1>
@@ -310,9 +95,10 @@
           Our advanced analytics solutions help you streamline practice management,
           reduce denials, and boost revenue.
         </p>
-        <img src="assets/img/about.jpg" alt="Practice Analytics Illustration" class="hero-illustration">
+        <img src="../assets/img/services/practice.jpg"  alt="Practice Analytics Illustration" class="hero-illustration">
       </div>
     </section>
+  -->
     
     <!-- Services / Feature Section -->
     <section class="services-section">
@@ -344,9 +130,9 @@
     </section>
     
     <!-- Call-to-Action -->
-    <section class="cta-section">
+    <section class="cta-section" style="    background-color: #78a9b9 !important;">
       <div class="container">
-        <h2>Take Your Practice to the Next Level</h2>
+        <h2 >Take Your Practice to the Next Level</h2>
         <p>Ready to harness the power of advanced analytics and streamlined management?</p>
         <a href="../index.html#contact" class="btn-cta">Get in Touch</a>
       </div>

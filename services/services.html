@@ -1,153 +1,214 @@
 <!doctype html>
 <html lang="en">
-
   <head>
-    <title> Axiom &mdash; Medical Management System</title>
     <meta charset="utf-8">
+    <title>Axiom — Medical Management System</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    
+    <!-- Icons & Vendor CSS -->
     <link rel="stylesheet" href="fonts/icomoon/style.css">
-
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/aos.css">
-
-    <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">
-
-  </head>
-
-  <body>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
-    <div class="site-wrap" id="home-section">
-
-      <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-          <div class="site-mobile-menu-close mt-3">
-            <span class="icon-close2 js-menu-toggle"></span>
-          </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-      </div>
-
-<style>
-   
-      /* Logo Styling */
-      .logo {
-        max-width: 70%; /* Ensures the logo scales with its container */
-        height: auto; /* Maintains the aspect ratio */
-        display: block; /* Removes inline padding or extra space */
-        margin: 0 auto; /* Centers the logo if inside a container */
+    <style>
+      /* ------------------------------
+         Mobile Menu Styles
+      ------------------------------ */
+      .site-mobile-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 2000;
+        overflow-y: auto;
+        padding: 20px;
       }
-    
-      /* Optional: Fixed dimensions for specific use cases */
-      .logo.fixed-size {
-        width: 250px; /* Adjust based on your needs */
-        height: auto; /* Ensures proper scaling */
+      .site-mobile-menu.active {
+        display: block;
       }
-    
-      /* Optional: Styling for logos within header sections */
-      .header-logo {
-        max-width: 200px; /* Ensures consistent scaling within the header */
-        height: auto;
+      .site-mobile-menu-header {
+        display: flex;
+        justify-content: flex-end;
       }
-    .sitename {
+      .site-mobile-menu-close {
+        font-size: 28px;
+        cursor: pointer;
+      }
+      .site-mobile-menu-body ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+      }
+      .site-mobile-menu-body ul li {
+        margin-bottom: 15px;
+      }
+      .site-mobile-menu-body ul li a {
+        text-decoration: none;
+        color: #333 !important;
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
       
-  white-space: nowrap;
-  margin: 0; /* Remove default margins if needed */
-}
-
-.site-menu a {
-  color: black !important;
-}
-.active {
-  color: #62cabc !important;
-}
-.site-menu li.active a {
-  color: #ff0000; /* Change to your desired color */
-}
-.site-menu li.active a {
-  color: #62cabc !important;
-}
-
-      @media (max-width: 768px) {
-        .logo {
-          max-width: 80%; /* Scales down slightly on smaller screens */
+      /* ------------------------------
+         Fixed Header Styles
+      ------------------------------ */
+      .site-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+      body {
+        padding-top: 80px; /* Adjust based on header height */
+        font-family: Arial, sans-serif;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 15px;
+      }
+      .site-logo img {
+        max-height: 50px;
+        vertical-align: middle;
+      }
+      .sitename {
+        margin-left: 10px;
+        font-size: 1.2em;
+        display: inline-block;
+      }
+      .site-menu li {
+        list-style: none;
+        display: inline-block;
+        margin-left: 20px;
+      }
+      .site-menu li a {
+        text-decoration: none;
+        color: #333 !important;
+        font-weight: 600;
+      }
+      .site-menu li a.active2 {
+        color: #3b84b4 !important;
+      }
+      
+      /* Hide mobile toggle on large screens */
+      @media (min-width: 992px) {
+        .site-mobile-menu,
+        .site-menu-toggle {
+          display: none !important;
         }
       }
-    </style>
-
-
-
-      <header class="site-navbar site-navbar-target" role="banner">
-
-        <div class="container">
-          <div class="row align-items-center position-relative">
-
-            <div class="col-3">
-              <div class="site-logo">
-                <a href="index.html" class="logo d-flex align-items-center me-auto">
-
-                <img src="../assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo">
-                <h4 class="sitename">Axiom Medical Management</h4>
-                </a>
-              </div>
-            </div>
-
-            <div class="col-9 text-right">
-              
-              <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-white"></span></a></span>
-
-              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
-                <ul class="site-menu main-menu js-clone-nav ml-auto " >
-                  <li><a href="../index.html" class="nav-link">Home</a></li>
-                  <li class="active"><a href="services.html" class="nav-link">Services</a></li>
-
-             <li><a href="about.html">About</a></li>
-            <li><a href="../index.html#careers">Careers</a></li>
-            <li><a href="../index.html#news">News</a></li>
-            <li><a href="../index.html#contact">Contact</a></li>
-            <li><a href="../index.html#privacy">Policies</a></li>
-                </ul>
-              </nav>
-            </div>
-
-            
-          </div>
-        </div>
-
-      </header>
-
       
-      <div class="hero"  style="background-image: url('../assets/img/hero-bg.jpg');">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-8 intro text-center">
-              <h1 class="text-white">Services</h1>
-              <a href="index.html">Home</a> <span class="mx-3 text-white">/</span> <strong class="text-white">Services</strong>
+      /* ------------------------------
+         Hero Section (For Demo)
+      ------------------------------ */
+      .hero {
+        height: 90vh;
+        background: url('../assets/img/hero-bg.jpg') no-repeat center center/cover;
+      }
+      .hero .intro {
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <!-- Mobile Menu -->
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <span class="site-mobile-menu-close js-menu-toggle">&times;</span>
+      </div>
+      <div class="site-mobile-menu-body">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../services/about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="../careers.html">Careers</a></li>
+          <li><a href="../index.html#news">News</a></li>
+          <li><a href="../index.html#contact">Contact</a></li>
+          <li><a href="../index.html#privacy">Policies</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Fixed Header -->
+    <header class="site-navbar site-navbar-target" role="banner">
+      <div class="container">
+        <div class="row align-items-center position-relative">
+          <div class="col-3">
+            <div class="site-logo">
+              <a href="index.html" class="logo d-flex align-items-center me-auto">
+                <img src="../assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo">
+                <h4 class="sitename">Axiom Medical </h4>
+              </a>
             </div>
+          </div>
+          <div class="col-9 text-right">
+            <!-- Hamburger Toggle: Visible on mobile -->
+            <span class="d-inline-block d-lg-none">
+              <a href="#" class="site-menu-toggle js-menu-toggle py-5">
+                <span class="icon-menu h3 text-white"><i class="fas fa-bars"></i></span>
+              </a>
+            </span>
+            <!-- Desktop Navigation -->
+            <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav ml-auto">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../services/about.html">About</a></li>
+                <li><a href="services.html" class="nav-link active2">Services</a></li>
+                <li><a href="../careers.html">Careers</a></li>
+                <li><a href="../index.html#news">News</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+                <li><a href="practice.html">Practices</a></li>
+
+              </ul>
+            </nav>
           </div>
         </div>
       </div>
-
-      <style>
-
-  .hero {
-  height: 50vh; /* sets hero height to half the viewport height */
-  background-size: cover;
-  background-position: center center;
-}
-
-
-
-      </style>
+    </header>
+    
+    <!-- Demo Hero Section -->
+    <div class="hero">
+      <div class="container">
+        <div class="row align-items-center justify-content-center" style="height: 90vh;">
+          <div class="col-lg-8 intro text-center">
+            <h1 class="text-white">Services</h1>
+            <a href="index.html" style="color: #4e83bd;">Home</a> 
+            <span class="mx-3 text-white">/</span> 
+            <strong class="text-white">Services</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- JavaScript to Toggle the Mobile Menu -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Select all elements with class "js-menu-toggle"
+        var menuToggles = document.querySelectorAll('.js-menu-toggle');
+        // Select the mobile menu element
+        var mobileMenu = document.querySelector('.site-mobile-menu');
+        
+        // Toggle active class on click
+        menuToggles.forEach(function(toggle) {
+          toggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            mobileMenu.classList.toggle('active');
+          });
+        });
+      });
+    </script>
+    
 <!--
       <div class="services mb-5">
         <div class="container-fluid px-0">
@@ -548,6 +609,9 @@
 
     <script src="js/main.js"></script>
 
+    <!-- Vendor JS Files -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 
 </html>

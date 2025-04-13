@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +30,17 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="subsi.css" rel="stylesheet">
   <link href="career.css" rel="stylesheet">
+ 
 
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
 
 </head>
 <style>
@@ -341,12 +352,7 @@ body{
 
           </span></i>
         </div>
-    <!--    <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    -->
+    
         </div>
       </div>
     </div><!-- End Top Bar -->
@@ -392,9 +398,11 @@ body{
             <li><a href="#hero" class="active">Home<br></a></li>
             <li><a href="services/about.html">About</a></li>
             <li><a href="services/services.html">Services</a></li>
-            <li><a href="#careers">Careers</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li><a href="services/practice.html">practices</a></li>
+
             <li><a href="#privacy">Policies</a></li>
 
           </ul>
@@ -433,7 +441,7 @@ body{
                 Axiom Medical Management provides seamless administrative, operational, and compliance services to healthcare providers. We help practices focus on delivering exceptional patient care while we handle the rest.
               </p>
               <div class="text-center mt-3">
-                <a href="#services" class="btn-secondary">Learn About Our Services</a>
+                <a href="services/services.html" class="btn-secondary">Learn About Our Services</a>
                <!-- <a href="#subsidiaries" class="btn-secondary">Explore Our Subsidiaries</a>
               -->
               </div>
@@ -532,49 +540,62 @@ body{
 
 
  <!-- Services Section -->
- <section id="services" class="services section">
 
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Services</h2>
-    <p>Comprehensive Healthcare Management Solutions</p>
-  </div><!-- End Section Title -->
-
-  <div class="container">
-    <div class="row gy-4">
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="service-item">
-          <h3>Administrative and Financial Services</h3>
-          <p>Streamlining billing and coding processes. Financial planning and revenue cycle management.</p>
+  <!-- ser tryyyyy-->
+   
+  
+    <!-- Services Section -->
+    <section id="services" class="services section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Comprehensive Healthcare Management Solutions</p>
+      </div><!-- End Section Title -->
+  
+      <div class="container">
+        <div class="row gy-4">
+          <!-- Administrative and Financial Services -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item admin-financial">
+              <h3>Administrative and Financial Services</h3>
+              <p>Streamlining billing and coding processes. Financial planning and revenue cycle management.</p>
+            </div>
+          </div>
+          <!-- Technology and IT Support -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item tech-it-support">
+              <h3>Technology and IT Support</h3>
+              <p>
+                Implementation of electronic medical records (EMR). Custom dashboards for analytics and reporting. 
+                Patient engagement tools such as appointment reminders and telehealth integration.
+              </p>
+            </div>
+          </div>
+          <!-- Compliance and Risk Management -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item compliance-risk">
+              <h3>Compliance and Risk Management</h3>
+              <p>Internal audits and staff training. Adherence to HIPAA, OSHA, and other regulatory frameworks.</p>
+            </div>
+          </div>
+          <!-- Practice Growth and Marketing Strategies -->
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item marketing-strategies">
+              <h3>Practice Growth and Marketing Strategies</h3>
+              <p>Digital marketing services tailored to healthcare. Patient satisfaction and retention programs.</p>
+            </div>
+          </div>
         </div>
       </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="service-item">
-          <h3>Technology and IT Support</h3>
-          <p>Implementation of electronic medical records (EMR). Custom dashboards for analytics and reporting. Patient engagement tools such as appointment reminders and telehealth integration.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-        <div class="service-item">
-          <h3>Compliance and Risk Management</h3>
-          <p>Internal audits and staff training. Adherence to HIPAA, OSHA, and other regulatory frameworks.</p>
-        </div>
-      </div>
-
-      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-        <div class="service-item">
-          <h3>Practice Growth and Marketing Strategies</h3>
-          <p>Digital marketing services tailored to healthcare. Patient satisfaction and retention programs.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-</section>
+    </section>
+  
+    <!-- AOS Library (for animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
+  
+  
 <!-- /Services Section -->
 
 
@@ -665,6 +686,16 @@ body{
           </ul>
         </div>
       </div>
+      <style>
+        .career-card ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        .career-card ul li::before {
+          content: none !important; /* Disable any custom icon/pseudo-element */
+        }
+      </style>
 
       <!-- Collapsible Job Openings Section -->
       <div class="col-12" data-aos="fade-up" data-aos-delay="300">
@@ -677,7 +708,7 @@ body{
           <!-- Job Listing - Billing Specialist -->
           <div class="job-listing">
             <h4>Billing Specialist</h4>
-            <p><strong> Location:</strong> Remote | <strong>💼 Type:</strong> Full-Time</p>
+            <p><strong> Location:</strong> Remote | <strong> Type:</strong> Full-Time</p>
             <p>Manage and optimize billing operations to ensure efficiency and accuracy in healthcare transactions.</p>
             <a href="careers.html" class="btn-apply">Apply Now</a>
           </div>
@@ -685,7 +716,7 @@ body{
           <!-- Job Listing - IT Systems Administrator -->
           <div class="job-listing">
             <h4>IT Systems Administrator</h4>
-            <p><strong> Location:</strong> Hybrid | <strong>💼 Type:</strong> Full-Time</p>
+            <p><strong> Location:</strong> Hybrid | <strong> Type:</strong> Full-Time</p>
             <p>Oversee and maintain IT infrastructure, ensuring security, performance, and compliance with industry standards.</p>
             <a href="apply.html" class="btn-apply">Apply Now</a>
           </div>
