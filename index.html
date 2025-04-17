@@ -995,6 +995,83 @@ function toggleJobs() {
             </div><!-- End Info Item -->
           </div>
 
+       
+
+<style>
+  .required-field {
+    position: relative;
+  }
+  .required-field input {
+    padding-left: 1.5em; /* make room for the star */
+  }
+  .required-field::before {
+    content: "*";
+    color: red;
+    position: absolute;
+    left: 1.0em;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+</style>
+
+<div class="col-lg-8">
+  <form
+    action="forms/contact.php"
+    method="post"
+    class="php-email-form"
+    data-aos="fade-up"
+    data-aos-delay="200"
+  >
+    <div class="row gy-4">
+
+      <div class="col-md-6 required-field">
+        <input
+          type="text"
+          name="name"
+          class="form-control"
+          placeholder="Your Name"
+          required
+        >
+      </div>
+
+      <div class="col-md-6 required-field">
+        <input
+          type="email"
+          name="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        >
+      </div>
+
+      <div class="col-md-6 required-field">
+        <input
+          type="tel"
+          name="phone"
+          class="form-control"
+          placeholder="Your Phone"
+          required
+        >
+      </div>
+
+      <div class="col-md-12 text-center "  >
+        <button type="submit">
+          <a style="color: #f0f2f7;" href="news.html">Send Message</a>
+        </button>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+
+
+<!-- try  -->
+
+
+
+<!--          
           <div class="col-lg-8">
             <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
               <div class="row gy-4">
@@ -1008,15 +1085,24 @@ function toggleJobs() {
                 </div>
 
                 <div class="col-md-6">
-                  <input type="tel" name="phone" class="form-control" placeholder="Your Phone" required>
+                  <input type="tel" name="phone" class="form-control" placeholder="Your Phone" required="">
                 </div>
              
                 <button type="submit"><a style="color: #f0f2f7;" href="news.html">Send Message</a></button>
         </div>
 
+        </form>
             </div>
-            </form></div></div></div></section>
+          -->
 
+
+
+            </div></div></div></section>
+
+         
+              
+           
+            
     <!-- Privacy Policy Section -->
     <section id="privacy" class="privacy section">
       <div class="container" data-aos="fade-up">

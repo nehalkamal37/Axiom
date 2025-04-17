@@ -1,0 +1,107 @@
+<script type="text/javascript"
+src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+emailjs.init({
+publicKey: "5z7ZWF7TDtdzcv0Pf",
+});
+})();
+</script>
+ <!-- 1) Include EmailJS SDK -->
+
+
+<div class="col-lg-8">
+<form
+  id="contact-form"
+  class="php-email-form"
+  onsubmit="return sendEmail(event)"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <div class="row gy-4">
+
+    <div class="col-md-6 required-field">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Your Name"
+        required
+      >
+    </div>
+
+    <div class="col-md-6 required-field">
+      <input
+        type="email"
+        id="email"
+        name="email"
+        class="form-control"
+        placeholder="Your Email"
+        required
+      >
+    </div>
+
+    <div class="col-md-6 required-field">
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        class="form-control"
+        placeholder="Your Phone"
+        required
+      >
+    </div>
+
+    <div class="col-md-12 required-field">
+      <textarea
+        id="message"
+        name="message"
+        class="form-control"
+        placeholder="Your Message"
+        rows="5"
+        required
+      ></textarea>
+    </div>
+
+    <div class="col-md-12 text-center">
+      <button type="submit" class="btn btn-primary">
+        Send Message
+      </button>
+    </div>
+
+  </div>
+</form>
+</div>
+
+
+<script>
+    function sendEmail(e) {
+      e.preventDefault(); // stop normal form submit
+    
+      // collect values
+      const params = {
+        from_name:   document.getElementById('name').value,
+        from_email:  document.getElementById('email').value,
+        phone:       document.getElementById('phone').value,
+        message:     document.getElementById('message').value,
+      };
+    
+      emailjs.send(
+        'service_dgxl57p',   // ← replace with your Service ID
+        'template_jlqp0wl',  // ← replace with your Template ID
+        params
+      )
+      .then(() => {
+        // on success, redirect to thank-you or news page
+        window.location.href = 'news.html';
+      }, (err) => {
+        console.error('EmailJS error:', err);
+        alert('Oops, something went wrong. Please try again.');
+      });
+    
+      return false; // prevent any further default
+    }
+    </script>
+    
