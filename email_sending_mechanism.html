@@ -31,7 +31,16 @@ publicKey: "5z7ZWF7TDtdzcv0Pf",
         required
       >
     </div>
-
+    <div class="col-md-6 required-field">
+      <input
+        type="hidden"
+        id="name"
+        name="name"
+        class="form-control"
+        placeholder="Your Name"
+        required
+      >
+    </div>
     <div class="col-md-6 required-field">
       <input
         type="email"
@@ -85,6 +94,7 @@ publicKey: "5z7ZWF7TDtdzcv0Pf",
         from_name:   document.getElementById('name').value,
         from_email:  document.getElementById('email').value,
         phone:       document.getElementById('phone').value,
+        subject :   'New message from Axiom',
         message:     document.getElementById('message').value,
       };
     
