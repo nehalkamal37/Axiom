@@ -969,14 +969,19 @@ function toggleJobs() {
         <div class="row gy-4">
 
           <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="info-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
+              <!-- replace the <i> with an image; “alt” is required for accessibility -->
               <i class="bi bi-geo-alt flex-shrink-0"></i>
+
               <div>
-                <h3>Corporate Office Address</h3>
-                <p>3095 Old Conejo Road, Suite 200
-                  Thousand Oaks, CA 91320</p>
+                <h3>Office Address</h3>
+                <p>
+                  3095 Old Conejo Road, Suite 200<br>
+                  Thousand Oaks, CA 91320
+                </p>
               </div>
-            </div><!-- End Info Item -->
+            </div>
+          <!-- End Info Item -->
 
             <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
               <i class="bi bi-telephone flex-shrink-0"></i>
@@ -1014,57 +1019,7 @@ function toggleJobs() {
     pointer-events: none;
   }
 </style>
-<!--
-<div class="col-lg-8">
-  <form
-    action="forms/contact.php"
-    method="post"
-    class="php-email-form"
-    data-aos="fade-up"
-    data-aos-delay="200"
-  >
-    <div class="row gy-4">
 
-      <div class="col-md-6 required-field">
-        <input
-          type="text"
-          name="name"
-          class="form-control"
-          placeholder="Your Name"
-          required
-        >
-      </div>
-
-      <div class="col-md-6 required-field">
-        <input
-          type="email"
-          name="email"
-          class="form-control"
-          placeholder="Your Email"
-          required
-        >
-      </div>
-
-      <div class="col-md-6 required-field">
-        <input
-          type="tel"
-          name="phone"
-          class="form-control"
-          placeholder="Your Phone"
-          required
-        >
-      </div>
-
-      <div class="col-md-12 text-center "  >
-        <button type="submit">
-          <a style="color: #f0f2f7;" href="news.html">Send Message</a>
-        </button>
-      </div>
-
-    </div>
-  </form>
-</div>
--->
 <script type="text/javascript"
 src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
@@ -1094,7 +1049,7 @@ publicKey: "GEeZ58IX2EWZKodgN",
         id="fname"
         name="fname"
         class="form-control"
-        placeholder="Your Name"
+        placeholder=" Name:"
         required
       >
     </div>
@@ -1105,7 +1060,7 @@ publicKey: "GEeZ58IX2EWZKodgN",
         id="email"
         name="email"
         class="form-control"
-        placeholder="Your Email"
+        placeholder=" Email Address:"
         required
       >
     </div>
@@ -1116,7 +1071,7 @@ publicKey: "GEeZ58IX2EWZKodgN",
         id="phone"
         name="phone"
         class="form-control"
-        placeholder="Your Phone"
+        placeholder=" Phone Number:"
         required
       >
     </div>
@@ -1126,7 +1081,7 @@ publicKey: "GEeZ58IX2EWZKodgN",
         id="message"
         name="message"
         class="form-control"
-        placeholder="Your Message"
+        placeholder=" Message:"
         rows="5"
         required
       ></textarea>
