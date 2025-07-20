@@ -30,6 +30,7 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="subsi.css" rel="stylesheet">
   <link href="career.css" rel="stylesheet">
+  <link href="styles/home.css" rel="stylesheet">
  
 
   <!-- Google Tag Manager -->
@@ -43,301 +44,7 @@
   <!-- End Google Tag Manager -->
 
 </head>
-<style>
- 
-body{
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  color: var(--default-color);
-}
-/* Main Content Styles */
-.content {
-  margin-top: 120px;
-}
 
-/* Left Column (Why Box) */
-.why-box {
-  background: #007bff; /* Blue background */
-  color: #fff; /* White text */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.why-box a {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-
-.btn-primary {
-  background-color: #e4e9f0; /* Soft light blue-gray background */
-  background: linear-gradient(145deg, #fff, #e6ebf0); /* Shadow-like gradient */
-
-  color: #333; /* Dark gray text for better readability */
-  border: 1px solid #ccd1d9; /* Add a subtle border */
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 2px; /* Slightly rounded corners for a casual feel */
-  text-decoration: none;
-  font-weight: 500; /* Medium font weight for a clean look */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #d7dce4; /* Slightly darker on hover */
-  background: linear-gradient(145deg, #f7fafc, #cfd4d9); /* Reverse gradient on hover */
-
-  transform: translateY(-2px); /* Subtle lift effect on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-}
-
-.btn-primary:active {
-  background-color: #ccd1d9; /* Darker for pressed effect */
-  transform: translateY(1px); /* Button sinks slightly when clicked */
-  box-shadow: none; /* Remove shadow when active */
-}
-
-.btn-secondary {
-  display: inline-block;
-  background: linear-gradient(145deg, #cfd4d9, #e6ebf0); /* Shadow-like gradient */
-  background: linear-gradient(145deg, #96a0aa, #c8cfd6); /* Shadow-like gradient */
-  background: linear-gradient(145deg, #fff, #c8cfd6); /* Shadow-like gradient */
-
-  color: #333; /* Dark text for readability */
-  border: 1px solid #9da5b3; /* Light border for definition */
-  padding: 12px 25px; /* Padding for size */
-  font-size: 1rem; /* Font size for readability */
-  font-weight: 500; /* Medium font weight */
-  border-radius: 8px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-secondary:hover {
-  background: linear-gradient(145deg, #e6ebf0, #cfd4d9); /* Reverse gradient on hover */
-  transform: translateY(-2px); /* Lift effect */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.btn-secondary:active {
-  background: linear-gradient(145deg, #ccd1d9, #bfc6cf); /* Darker gradient for active state */
-  transform: translateY(1px); /* Slightly sunken effect */
-  box-shadow: none; /* Remove shadow when active */
-}
-
-
-/* Right Column (Icon Boxes) */
-.icon-box {
-  background: #fff; /* White background */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.icon-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-}
-
-.icon-box i {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.icon-box h4 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.icon-box p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .icon-box {
-    margin-bottom: 20px;
-  }
-}
-.icon-box {
-  background: #fff; /* White background */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex; /* Use Flexbox */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 80%; /* Ensure equal height for all boxes */
-}
-
-.icon-box i {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.icon-box h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.icon-box p {
-  font-size: 1rem;
-  color: #555;
-}
-.row.g-3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.icon-box {
-  flex: 1 1 calc(25% - 20px); /* Adjusts box width based on the screen size */
-  margin: 10px;
-}
-
-
-
-</style>
-<style>
-/* General Section Styling */
-.about.section {
-  padding: 60px 0;
-  background: #f9f9f9;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #007bff;
-}
-
-.section-intro {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #555;
-  line-height: 1.8;
-}
-
-/* Info Cards */
-.info-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.info-card {
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  flex: 1 1 calc(50% - 20px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-card:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(145deg, #eceff1, #c8cfd6); /* Shadow-like gradient */
-
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.info-card h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.info-card p, .info-card ul {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.info-card ul {
-  padding-left: 20px;
-  list-style: disc;
-}
-
-.info-card ul li {
-  margin-bottom: 8px;
-
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .info-card {
-    flex: 1 1 100%;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-intro {
-    font-size: 1rem;
-  }
-}
-
-/*newwwwwwwwwwwww*/
-.info-card ul {
-  padding-left: 20px; /* Space for bullet alignment */
-  list-style: disc;
-  margin: 0; /* Remove default margin */
-  line-height: 1.0; /* Tighter line spacing between list items */
-}
-
-.info-card ul li {
-  margin-bottom: 5px; /* Reduce space between items */
-  font-size: 1rem; /* Adjust font size */
-}
-
-.info-card ul li strong {
-  color: #1a6fc9; /* Highlighted color for bold terms */
-  font-weight: bold;
-  text-transform: uppercase; /* Make bold terms uppercase for emphasis */
-}
-
-/*background thing*/
-
-
-.hero .welcome {
-  background: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
-  color: #fff; /* White text for contrast */
-  padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-}
-
-.hero .welcome h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fcf2f2;
-}
-
-.hero .welcome h4 {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-</style>
 <body class="index-page">
 
   <header id="header" class="header sticky-top">
@@ -438,249 +145,198 @@ body{
   </header>
 
   <main class="main">
+<section id="hero" class="hero section light-background">
+  <img src="assets/img/hero-bg.jpg" alt="Healthcare professionals working together" class="img-fluid" data-aos="fade-in">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section light-background">
+  <div class="container position-relative">
 
+    <!-- Welcome message -->
+    <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
+      <h1 style="color: white;">Innovative Management Solutions for Modern Healthcare</h1>
+      <p>Empowering healthcare practices with tailored support and operational excellence.</p>
+    </div>
+
+    <div class="content row mt-4">
       
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container position-relative">
-
-        <div class="welcome position-relative" data-aos="fade-down" data-aos-delay="100">
-          <h2>Innovative Management Solutions for Modern Healthcare</h2>
-          <p>Empowering healthcare practices with tailored support and operational excellence.
+      <!-- Left Column -->
+      <div class="col-lg-4">
+        <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
+          <p>
+            Axiom Medical Management provides seamless administrative, operational, and compliance
+            services to healthcare providers. We help practices focus on delivering exceptional
+            patient care while we handle the rest.
           </p>
-        </div><!-- End Welcome -->
-        
-       
-        <div class="content row">
-          <!-- Left Column -->
-          <div class="col-lg-4">
-            <div class="why-box" data-aos="zoom-out" data-aos-delay="200">
-              <p>
-                Axiom Medical Management provides seamless administrative, operational, and compliance services to healthcare providers. We help practices focus on delivering exceptional patient care while we handle the rest.
-              </p>
-              <div class="text-center mt-3">
-                <a href="services/services.html" class="btn-secondary">Learn About Our Services</a>
-               <!-- <a href="#subsidiaries" class="btn-secondary">Explore Our Subsidiaries</a>
-              -->
-              </div>
-            </div>
-          </div>
-          <!-- Right Column -->
-          <div class="col-lg-8">
-            <div class="row g-3">
-              <div class="col-md-6 col-xl-3">
-                <div class="icon-box">
-                  <i class="bi bi-clipboard-data"></i>
-                  <h4 >Practice Management</h4>
-                  <p>Streamlining day-to-day operations.</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-3">
-                <div class="icon-box">
-                  <i class="bi bi-gem"></i>
-                  <h4>IT Integration
-                  </h4>
-                  <p>Leveraging technology for efficiency.</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-3">
-                <div class="icon-box">
-                  <i class="bi bi-shield-check"></i>
-                  <h4>Compliance Expertise</h4>
-                  <p>Ensuring adherence to healthcare regulations.</p>
-                </div>
-              </div>
-              <div class="col-md-6 col-xl-3">
-                <div class="icon-box">
-                  <i class="bi bi-graph-up-arrow"></i>
-                  <h4>Growth Strategies
-                  </h4>
-                  <p>Driving business development and patient engagement.</p>
-                </div>
-              </div>
-            </div>
+          <div class="text-center mt-3">
+            <a href="services/services.html" class="btn btn-primary" role="button">
+              Learn About Our Services
+            </a>
           </div>
         </div>
-        
-
-        
       </div>
 
-    </section><!-- /Hero Section -->
+      <!-- Right Column -->
+      <div class="col-lg-8">
+        <div class="row g-3">
+          
+          <div class="col-md-6 col-xl-3">
+            <div class="icon-box text-center p-3">
+              <i class="bi bi-clipboard-data fs-1" aria-hidden="true"></i>
+              <h2 class="h5 mt-2">Practice Management</h2>
+              <p>Streamlining day-to-day operations.</p>
+            </div>
+          </div>
 
-<!-- About Section -->
+          <div class="col-md-6 col-xl-3">
+            <div class="icon-box text-center p-3">
+              <i class="bi bi-gem fs-1" aria-hidden="true"></i>
+              <h2 class="h5 mt-2">IT Integration</h2>
+              <p>Leveraging technology for efficiency.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="icon-box text-center p-3">
+              <i class="bi bi-shield-check fs-1" aria-hidden="true"></i>
+              <h2 class="h5 mt-2">Compliance Expertise</h2>
+              <p>Ensuring adherence to healthcare regulations.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-xl-3">
+            <div class="icon-box text-center p-3">
+              <i class="bi bi-graph-up-arrow fs-1" aria-hidden="true"></i>
+              <h2 class="h5 mt-2">Growth Strategies</h2>
+              <p>Driving business development and patient engagement.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 <section id="about" class="about section">
-
   <div class="container">
     <div class="row gy-4 gx-5">
-
       <div class="col-lg-12 content" data-aos="fade-up" data-aos-delay="100">
-        <h2 class="section-title">About Us</h2>
-        <p class="section-intro">
-          
-     </p>
-        
+        <h2>About Us</h2>
+
+        <p>
+          Axiom Medical Management is a trusted <strong>Management Services Organization (MSO)</strong> dedicated
+          to providing healthcare providers with tailored solutions that enhance efficiency, ensure
+          compliance, and foster growth. With a focus on operational excellence, we empower
+          practices to achieve their full potential.
+        </p>
+
         <div class="info-cards">
+
+          <!-- Who We Are -->
           <div class="info-card">
-            <h4>Who We Are</h4>
+            <h3>Who We Are</h3>
             <p>
-              Axiom Medical Management is a trusted Management Services Organization (MSO) dedicated
-              to providing healthcare providers with tailored solutions that enhance efficiency, ensure
-              compliance, and foster growth. With a focus on operational excellence, we empower
-              practices to achieve their full potential.</p>          </div>
-
-          <div class="info-card">
-            <h4>Mission Statement</h4>
-            <p>To revolutionize healthcare management through innovation, expertise, and collaboration, enabling providers to focus on delivering quality care.</p>
+              We are a team of experienced professionals providing seamless administrative,
+              operational, and compliance services to healthcare providers — so they can focus
+              on delivering exceptional patient care.
+            </p>
           </div>
 
+          <!-- Mission Statement -->
           <div class="info-card">
-            <h4>Core Values</h4>
+            <h3>Mission Statement</h3>
+            <p>
+              To revolutionize healthcare management through innovation, expertise, and collaboration,
+              enabling providers to focus on delivering quality care.
+            </p>
+          </div>
+
+          <!-- Core Values -->
+          <div class="info-card">
+            <h3>Core Values</h3>
             <ul>
-              <li><strong>Integrity:</strong> Building trust through transparency.</li>
-              <li><strong>Excellence:</strong> Commitment to superior service.</li>
-              <li><strong>Innovation:</strong> Continuous improvement and forward-thinking solutions.</li>
-              <li><strong>Collaboration:</strong> Partnering for mutual success.</li>
+              <li><strong>Integrity:</strong> Building trust through transparency and ethical practices.</li>
+              <li><strong>Excellence:</strong> Striving for superior service and continuous improvement.</li>
+              <li><strong>Innovation:</strong> Embracing change and leveraging technology to stay ahead.</li>
+              <li><strong>Collaboration:</strong> Working hand-in-hand with our partners for shared success.</li>
             </ul>
           </div>
 
+          <!-- Milestones -->
           <div class="info-card">
-            <h4>Milestones</h4>
+            <h3>Milestones</h3>
             <ul>
-              <li>Founded to address the operational needs of healthcare practices.</li>
-              <li>Expanded services to include IT integration and compliance management.</li>
-              <li>Supported multiple practices across California.</li>
+              <li>Founded to meet the operational needs of healthcare practices.</li>
+              <li>Expanded to include IT integration, compliance, and growth services.</li>
+              <li>Successfully supported numerous practices across California and beyond.</li>
             </ul>
           </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="services" class="services section">
+  <div class="container" data-aos="fade-up">
+    <h2>Our Services</h2>
+    <p class="section-intro">
+      Comprehensive Healthcare Management Solutions tailored to your needs.
+    </p>
+
+    <div class="row gy-4">
+      
+      <!-- Administrative and Financial Services -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-item p-3 border rounded shadow-sm h-100">
+          <h3>Administrative & Financial Services</h3>
+          <p>
+            Streamlining billing and coding processes, providing financial planning,
+            and managing the revenue cycle efficiently.
+          </p>
+        </div>
+      </div>
+
+      <!-- Technology and IT Support -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-item p-3 border rounded shadow-sm h-100">
+          <h3>Technology & IT Support</h3>
+          <p>
+            Implementing electronic medical records (EMR), building custom dashboards for analytics & reporting,
+            and integrating telehealth and patient engagement tools.
+          </p>
+        </div>
+      </div>
+
+      <!-- Compliance and Risk Management -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-item p-3 border rounded shadow-sm h-100">
+          <h3>Compliance & Risk Management</h3>
+          <p>
+            Conducting internal audits, staff training, and ensuring adherence
+            to HIPAA, OSHA, and other regulatory standards.
+          </p>
+        </div>
+      </div>
+
+      <!-- Practice Growth and Marketing Strategies -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-item p-3 border rounded shadow-sm h-100">
+          <h3>Practice Growth & Marketing</h3>
+          <p>
+            Delivering digital marketing strategies, improving patient satisfaction,
+            and implementing retention programs to grow your practice.
+          </p>
         </div>
       </div>
 
     </div>
   </div>
-  
-
-
-
- <!-- Services Section -->
-
-  <!-- ser tryyyyy-->
-   
-  
-    <!-- Services Section -->
-    <section id="services" class="services section">
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Comprehensive Healthcare Management Solutions</p>
-      </div><!-- End Section Title -->
-  
-      <div class="container">
-        <div class="row gy-4">
-          <!-- Administrative and Financial Services -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item admin-financial">
-              <h3>Administrative and Financial Services</h3>
-              <p>Streamlining billing and coding processes. Financial planning and revenue cycle management.</p>
-            </div>
-          </div>
-          <!-- Technology and IT Support -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item tech-it-support">
-              <h3>Technology and IT Support</h3>
-              <p>
-                Implementation of electronic medical records (EMR). Custom dashboards for analytics and reporting. 
-                Patient engagement tools such as appointment reminders and telehealth integration.
-              </p>
-            </div>
-          </div>
-          <!-- Compliance and Risk Management -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item compliance-risk">
-              <h3>Compliance and Risk Management</h3>
-              <p>Internal audits and staff training. Adherence to HIPAA, OSHA, and other regulatory frameworks.</p>
-            </div>
-          </div>
-          <!-- Practice Growth and Marketing Strategies -->
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item marketing-strategies">
-              <h3>Practice Growth and Marketing Strategies</h3>
-              <p>Digital marketing services tailored to healthcare. Patient satisfaction and retention programs.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <!-- AOS Library (for animations) -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  
-  
-  
-<!-- /Services Section -->
-
-
-<style>
-  .section-title p {
-  font-size: 1.2rem; /* Adjust font size */
-  color: #333; /* Use a subtle dark color */
-  background: linear-gradient(to right, #007bff, #00c6ff); /* Add a gradient background */
-  color: white; /* Make text color white for better contrast */
-  padding: 10px 20px; /* Add padding for a button-like effect */
-  border-radius: 30px; /* Rounded edges for a modern look */
-  text-align: center; /* Center align the text */
-  display: inline-block; /* Make it inline for better placement */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-}
-
-</style>
 </section>
 
 
-  
-
-
-<style>
-/* Improved Styling for Job Listings */
-.career-card {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.job-listing {
-  background: white;
-  padding: 15px;
-  border-left: 5px solid #007bff;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.job-listing h4 {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.btn-apply {
-  display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-apply:hover {
-  background: #0056b3;
-}
-</style>
 
 <!--  updates  -->
 <!-- Careers Section -->
@@ -691,18 +347,22 @@ body{
       <p>Join our team and be part of an innovative company transforming healthcare management.</p>
     </div>
 
+
     <div class="row gy-4">
-      <!-- Why Join Axiom -->
+       <!-- Why Join Axiom -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="career-card">
+        <div class="career-card p-3 border rounded shadow-sm h-100">
           <h3>Why Join Axiom?</h3>
-          <p>Be part of a forward-thinking team that values collaboration, innovation, and career growth. We empower our employees with opportunities to make a real impact in healthcare management.</p>
+          <p>
+            Be part of a forward-thinking team that values collaboration, innovation, and career growth.
+            We empower our employees with opportunities to make a real impact in healthcare management.
+          </p>
         </div>
       </div>
 
       <!-- Employee Benefits -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="career-card">
+        <div class="career-card p-3 border rounded shadow-sm h-100">
           <h3>Employee Benefits</h3>
           <ul>
             <li><strong>Competitive Compensation:</strong> Industry-leading salary packages.</li>
@@ -711,6 +371,7 @@ body{
           </ul>
         </div>
       </div>
+
       <style>
         .career-card ul {
           list-style: none;
@@ -721,6 +382,8 @@ body{
           content: none !important; /* Disable any custom icon/pseudo-element */
         }
       </style>
+
+      
 
       <!-- Collapsible Job Openings Section -->
       <div class="col-12" data-aos="fade-up" data-aos-delay="300">
@@ -767,456 +430,245 @@ function toggleJobs() {
 }
 </script>
 
-<!-- CSS for Styling -->
-<style>
-/* General Styling */
-.career-card {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
-}
-
-.career-card:hover {
-  background: #e9ecef;
-}
-
-/* Job Listings */
-.job-listing-container {
-  display: none;
-  margin-top: 10px;
-}
-
-.job-listing-container.hidden {
-  display: none;
-}
-
-.job-listing-container:not(.hidden) {
-  display: block;
-}
-
-.job-listing {
-  background: white;
-  padding: 15px;
-  border-left: 5px solid #007bff;
-  border-radius: 5px;
-  margin-bottom: 15px;
-}
-
-.job-listing h4 {
-  margin-bottom: 5px;
-  color: #333;
-}
-
-.btn-apply {
-  display: inline-block;
-  background: #007bff;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.btn-apply:hover {
-  background: #0056b3;
-}
-</style>
 
 
 
 <!--   -->
-
-<style>
-  /* General Section Styling */
-.news.section {
-  padding: 60px 0;
-  background-color: #f9f9f9;
-}
-
-
-
-/* News Cards */
-.news-card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.news-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.news-card h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #333;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 5px;
-}
-
-.news-card ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.news-card ul li {
-  margin-bottom: 10px;
-}
-
-.news-card ul li a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: #007bff;
-  transition: color 0.2s ease;
-}
-
-.news-card ul li a:hover {
-  color: #0056b3;
-}
-
-/* Events Styling */
-.news-card.events {
-  background: linear-gradient(to right, #007bff, #00c6ff);
-  color: #fff;
-}
-
-.news-card.events h3 {
-  color: #fff;
-}
-
-.news-card.events ul li a {
-  color: #fff;
-  font-weight: bold;
-}
-
-.news-card.events ul li a:hover {
-  text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .news-card {
-    padding: 15px;
-  }
-
-  .section-title h2 {
-    font-size: 2rem;
-  }
-
-  .section-title p {
-    font-size: 1rem;
-  }
-}
-
-</style>
-<!-- News & Insights Section -->
 <section id="news" class="news section">
   <div class="container" data-aos="fade-up">
-    <div class="section-title">
+
+    <div class="section-title text-center mb-4">
       <h2>News & Insights</h2>
       <p>Stay updated with the latest news and industry insights.</p>
     </div>
 
     <div class="row gy-4">
+
       <!-- Latest News -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-        <div class="news-card">
+        <div class="news-card p-3 border rounded shadow-sm h-100">
           <h3>Latest News</h3>
           <ul>
-            <li><a href="news.html">Axiom Launches New Compliance Training Program for Providers</a></li>
-            <li><a href="news.html">California Rheumatology Institute Opens New Location</a></li>
+            <li>
+              <a href="news.html">
+                Axiom Launches New Compliance Training Program for Providers
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                California Rheumatology Institute Opens New Location
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <!-- Industry Insights Blog -->
       <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-        <div class="news-card">
+        <div class="news-card p-3 border rounded shadow-sm h-100">
           <h3>Industry Insights Blog</h3>
           <ul>
-            <li><a href="news.html">Top 5 Tips for Streamlining Healthcare Operations</a></li>
-            <li><a href="news.html">Leveraging Technology to Improve Patient Outcomes</a></li>
+            <li>
+              <a href="news.html">
+                Top 5 Tips for Streamlining Healthcare Operations
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                Leveraging Technology to Improve Patient Outcomes
+              </a>
+            </li>
           </ul>
         </div>
       </div>
 
       <!-- Events -->
       <div class="col-12" data-aos="fade-up" data-aos-delay="300">
-        <div class="news-card events">
+        <div class="news-card events p-3 border rounded shadow-sm h-100">
           <h3>Events</h3>
           <ul>
-            <li><a href="news.html">Webinar: Navigating Regulatory Challenges – March 15, 2025</a></li>
-            <li><a href="news.html">Healthcare Operations Conference – April 20, 2025</a></li>
+            <li>
+              <a href="news.html">
+                Webinar: Navigating Regulatory Challenges – March 15, 2025
+              </a>
+            </li>
+            <li>
+              <a href="news.html">
+                Healthcare Operations Conference – April 20, 2025
+              </a>
+            </li>
           </ul>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Get in touch with us for any inquiries or support.</p>
-      </div><!-- End Section Title -->
+<section id="contact" class="contact section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title">
+      <h2>Contact</h2>
+      <p>Get in touch with us for any inquiries or support.</p>
+    </div>
 
-      <div class="mb-5" data-aos="fade-up" data-aos-delay="200">
-        <iframe
+    <!-- Google Map -->
+    <div class="mb-4" data-aos="fade-up" data-aos-delay="100">
+      <iframe
         src="https://www.google.com/maps?q=3095+Old+Conejo+Road,+Suite+200,+Thousand+Oaks,+CA+91320&output=embed"
+        title="Map showing Axiom Office"
         style="border:0; width:100%; height:270px;"
-        frameborder="0"
-        allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
       </iframe>
-            </div><!-- End Google Maps -->
+    </div>
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="row gy-4">
+      <!-- Contact Info -->
+      <div class="col-lg-4">
+        <div class="info-item">
+          <h3>Office Address</h3>
+          <p>3095 Old Conejo Road, Suite 200<br>Thousand Oaks, CA 91320</p>
+        </div>
 
-        <div class="row gy-4">
+        <div class="info-item">
+          <h3>Call Us</h3>
+          <p><a href="tel:+18883671850">(888) 367-1850</a></p>
+        </div>
 
-          <div class="col-lg-4">
-            <div class="info-item d-flex align-items-start" data-aos="fade-up" data-aos-delay="300">
-              <!-- replace the <i> with an image; “alt” is required for accessibility -->
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
+        <div class="info-item">
+          <h3>Email Us</h3>
+          <p><a href="mailto:operations@axiommm.com">operations@axiommm.com</a></p>
+        </div>
 
-              <div>
-                <h3>Office Address</h3>
-                <p>
-                  3095 Old Conejo Road, Suite 200<br>
-                  Thousand Oaks, CA 91320
-                </p>
-              </div>
+        <div class="info-item">
+          <h3>Postal Mail</h3>
+          <p>P.O. Box 67<br>Newbury Park, CA 91319</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-8">
+        <form
+          id="contact-form"
+          onsubmit="return sendEmail(event)"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <div class="row gy-3">
+            <div class="col-md-6">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                class="form-control"
+                placeholder="Your Name"
+                required
+              >
             </div>
-          <!-- End Info Item -->
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>(888) 367-1850</p>
-              </div>
-            </div><!-- End Info Item -->
+            <div class="col-md-6">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="form-control"
+                placeholder="Email Address"
+                required
+              >
+            </div>
 
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>operations@axiommm.com</p>
-              </div>
-            </div><!-- End Info Item -->
-         
-         
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Postal Mail</h3>
-                <p>  P.O. Box 67<br>
-                     Newbury Park, CA 91319</p>
-              </div>
-            </div><!-- End Info Item -->
-         
+            <div class="col-md-6">
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="form-control"
+                placeholder="Phone Number"
+                required
+              >
+            </div>
+
+            <div class="col-md-12">
+              <textarea
+                id="message"
+                name="message"
+                class="form-control"
+                placeholder="Your Message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
           </div>
-
-       
-
-<style>
-  .required-field {
-    position: relative;
-  }
-  .required-field input {
-    padding-left: 1.5em; /* make room for the star */
-  }
-  .required-field::before {
-    content: "*";
-    color: red;
-    position: absolute;
-    left: 1.0em;
-    top: 50%;
-    transform: translateY(-50%);
-    pointer-events: none;
-  }
-</style>
-
-<script type="text/javascript"
-src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-(function(){
-emailjs.init({
-publicKey: "GEeZ58IX2EWZKodgN",
-});
-})();
-</script>
- <!-- 1) Include EmailJS SDK -->
-
-
-<div class="col-lg-8">
-<form
-  id="contact-form"
-  class="php-email-form"
-  onsubmit="return sendEmail(event)"
-  data-aos="fade-up"
-  data-aos-delay="200"
->
-  <div class="row gy-4">
-
-    <div class="col-md-6 required-field">
-      <input
-        type=""
-        id="fname"
-        name="fname"
-        class="form-control"
-        placeholder=" Name:"
-        required
-      >
-    </div>
-    
-    <div class="col-md-6 required-field">
-      <input
-        type="email"
-        id="email"
-        name="email"
-        class="form-control"
-        placeholder=" Email Address:"
-        required
-      >
-    </div>
-
-    <div class="col-md-6 required-field">
-      <input
-        type="tel"
-        id="phone"
-        name="phone"
-        class="form-control"
-        placeholder=" Phone Number:"
-        required
-      >
-    </div>
-
-    <div class="col-md-12 required-field">
-      <textarea
-        id="message"
-        name="message"
-        class="form-control"
-        placeholder=" Message:"
-        rows="5"
-        required
-      ></textarea>
-    </div>
-
-    <div class="col-md-12 text-center">
-      <button type="submit" class="btn btn-primary">
-        Send Message
-      </button>
-    </div>
-
-  </div>
-</form>
-</div>
-
-
-<script>
-    function sendEmail(e) {
-      e.preventDefault(); // stop normal form submit
-    
-      // collect values
-      const params = {
-        from_name:   document.getElementById('fname').value,
-        from_email:  document.getElementById('email').value,
-        phone:       document.getElementById('phone').value,
-        subject :   'New message from Axiom',
-        message:     document.getElementById('message').value,
-      };
-    
-      emailjs.send(
-        'service_kjn4eeg',   // ← replace with your Service ID
-        'template_h1d7z15',  // ← replace with your Template ID
-        params
-      )
-      .then(() => {
-        // on success, redirect to thank-you or news page
-        window.location.href = 'news.html';
-      }, (err) => {
-        console.error('EmailJS error:', err);
-        alert('Oops, something went wrong. Please try again.');
-      });
-    
-      return false; // prevent any further default
-    }
-    </script>
-    
-
-<!-- try  -->
-
-
-
-<!--          
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required>
-                </div>
-
-                <div class="col-md-6">
-                  <input type="tel" name="phone" class="form-control" placeholder="Your Phone" required="">
-                </div>
-             
-                <button type="submit"><a style="color: #f0f2f7;" href="news.html">Send Message</a></button>
-        </div>
-
         </form>
-            </div>
-          -->
+      </div>
+    </div>
+  </div>
+</section>
 
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+(function(){
+  emailjs.init({ publicKey: "GEeZ58IX2EWZKodgN" });
+})();
+function sendEmail(e) {
+  e.preventDefault();
 
+  const params = {
+    from_name: document.getElementById('fname').value,
+    from_email: document.getElementById('email').value,
+    phone: document.getElementById('phone').value,
+    subject: 'New message from Axiom',
+    message: document.getElementById('message').value,
+  };
 
-            </div></div></div></section>
+  emailjs.send('service_kjn4eeg', 'template_h1d7z15', params)
+    .then(() => {
+      window.location.href = 'news.html';
+    }, (err) => {
+      console.error('EmailJS error:', err);
+      alert('Oops, something went wrong. Please try again.');
+    });
 
-         
+  return false;
+}
+</script>
+
               
-           
+           <section id="privacy" class="privacy section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>Privacy Policy</h2>
+      <p>
+        We are committed to safeguarding your data. Learn about our practices, HIPAA compliance,
+        and privacy measures to ensure your information remains secure.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="terms" class="terms section">
+  <div class="container" data-aos="fade-up">
+    <div class="section-title text-center">
+      <h2>Terms & Conditions</h2>
+      <p>
+        Understand the terms for using our website and accessing our services.
+        By using this site, you agree to comply with our policies and guidelines.
+      </p>
+    </div>
+  </div>
+</section>
+
             
-    <!-- Privacy Policy Section -->
-    <section id="privacy" class="privacy section">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Privacy Policy</h2>
-          <p>We are committed to safeguarding your data. Learn about our practices, HIPAA compliance, and privacy measures.</p>
-        </div>
-      </div>
-    </section><!-- End Privacy Policy Section -->
-
-    <!-- Terms & Conditions Section -->
-    <section id="terms" class="terms section">
-      <div class="container" data-aos="fade-up">
-        <div class="section-title">
-          <h2>Terms & Conditions</h2>
-          <p>Understand the terms for using our website and accessing our services.</p>
-        </div>
-      </div>
-    </section><!-- End Terms & Conditions Section -->
-
+   
     
     <!-- oldddddddd Section -->
    

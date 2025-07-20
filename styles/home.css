@@ -1,0 +1,479 @@
+
+body{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  color: var(--default-color);
+}
+/* Main Content Styles */
+.content {
+  margin-top: 120px;
+}
+
+/* Left Column (Why Box) */
+.why-box {
+  background: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.why-box a {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+.btn-primary {
+  background-color: #e4e9f0; /* Soft light blue-gray background */
+  background: linear-gradient(145deg, #fff, #e6ebf0); /* Shadow-like gradient */
+
+  color: #333; /* Dark gray text for better readability */
+  border: 1px solid #ccd1d9; /* Add a subtle border */
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 2px; /* Slightly rounded corners for a casual feel */
+  text-decoration: none;
+  font-weight: 500; /* Medium font weight for a clean look */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #d7dce4; /* Slightly darker on hover */
+  background: linear-gradient(145deg, #f7fafc, #cfd4d9); /* Reverse gradient on hover */
+
+  transform: translateY(-2px); /* Subtle lift effect on hover */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
+}
+
+.btn-primary:active {
+  background-color: #ccd1d9; /* Darker for pressed effect */
+  transform: translateY(1px); /* Button sinks slightly when clicked */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+.btn-secondary {
+  display: inline-block;
+  background: linear-gradient(145deg, #cfd4d9, #e6ebf0); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #96a0aa, #c8cfd6); /* Shadow-like gradient */
+  background: linear-gradient(145deg, #fff, #c8cfd6); /* Shadow-like gradient */
+
+  color: #333; /* Dark text for readability */
+  border: 1px solid #9da5b3; /* Light border for definition */
+  padding: 12px 25px; /* Padding for size */
+  font-size: 1rem; /* Font size for readability */
+  font-weight: 500; /* Medium font weight */
+  border-radius: 8px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: linear-gradient(145deg, #e6ebf0, #cfd4d9); /* Reverse gradient on hover */
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.btn-secondary:active {
+  background: linear-gradient(145deg, #ccd1d9, #bfc6cf); /* Darker gradient for active state */
+  transform: translateY(1px); /* Slightly sunken effect */
+  box-shadow: none; /* Remove shadow when active */
+}
+
+
+/* Right Column (Icon Boxes) */
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.icon-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .icon-box {
+    margin-bottom: 20px;
+  }
+}
+.icon-box {
+  background: #fff; /* White background */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  height: 80%; /* Ensure equal height for all boxes */
+}
+
+.icon-box i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.icon-box h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.icon-box p {
+  font-size: 1rem;
+  color: #555;
+}
+.row.g-3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.icon-box {
+  flex: 1 1 calc(25% - 20px); /* Adjusts box width based on the screen size */
+  margin: 10px;
+}
+
+
+
+/* General Section Styling */
+.about.section {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Info Cards */
+.info-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.info-card {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  flex: 1 1 calc(50% - 20px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  background: linear-gradient(145deg, #eceff1, #c8cfd6); /* Shadow-like gradient */
+
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.info-card h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-card p, .info-card ul {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.info-card ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.info-card ul li {
+  margin-bottom: 8px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .info-card {
+    flex: 1 1 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-intro {
+    font-size: 1rem;
+  }
+}
+
+/*newwwwwwwwwwwww*/
+.info-card ul {
+  padding-left: 20px; /* Space for bullet alignment */
+  list-style: disc;
+  margin: 0; /* Remove default margin */
+  line-height: 1.0; /* Tighter line spacing between list items */
+}
+
+.info-card ul li {
+  margin-bottom: 5px; /* Reduce space between items */
+  font-size: 1rem; /* Adjust font size */
+}
+
+.info-card ul li strong {
+  color: #1a6fc9; /* Highlighted color for bold terms */
+  font-weight: bold;
+  text-transform: uppercase; /* Make bold terms uppercase for emphasis */
+}
+
+/*background thing*/
+
+
+.hero .welcome {
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
+  color: #fff; /* White text for contrast */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+}
+
+.hero .welcome h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fcf2f2;
+}
+
+.hero .welcome h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+
+/*  about   */
+
+
+/* Improved Styling for Job Listings */
+.career-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.job-listing {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.job-listing h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.btn-apply {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-apply:hover {
+  background: #0056b3;
+}
+
+
+
+/* General Styling */
+.career-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.career-card:hover {
+  background: #e9ecef;
+}
+
+/* Job Listings */
+.job-listing-container {
+  display: none;
+  margin-top: 10px;
+}
+
+.job-listing-container.hidden {
+  display: none;
+}
+
+.job-listing-container:not(.hidden) {
+  display: block;
+}
+
+.job-listing {
+  background: white;
+  padding: 15px;
+  border-left: 5px solid #007bff;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.job-listing h4 {
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.btn-apply {
+  display: inline-block;
+  background: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-apply:hover {
+  background: #0056b3;
+}
+
+
+
+
+
+  /* General Section  news Styling */
+.news.section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+}
+
+
+
+/* News Cards */
+.news-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.news-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+.news-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.news-card ul li {
+  margin-bottom: 10px;
+}
+
+.news-card ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #007bff;
+  transition: color 0.2s ease;
+}
+
+.news-card ul li a:hover {
+  color: #0056b3;
+}
+
+/* Events Styling */
+.news-card.events {
+  background: linear-gradient(to right, #007bff, #00c6ff);
+  color: #fff;
+}
+
+.news-card.events h3 {
+  color: #fff;
+}
+
+.news-card.events ul li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.news-card.events ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .news-card {
+    padding: 15px;
+  }
+
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .section-title p {
+    font-size: 1rem;
+  }
+}
