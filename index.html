@@ -11,6 +11,7 @@
   <!-- Favicons -->
   <link href="assets/img/Full Axiom Logo.png" style="width: 222px; height: 222px;" rel="icon">
   <link href="assets/img/Full Axiom Logo.png" rel="apple-touch-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -49,40 +50,31 @@
 
   <header id="header" class="header sticky-top">
 
-    <div class="topbar d-flex align-items-center">
-  <div class="container d-flex justify-content-center justify-content-md-between">
-    <div class="contact-info d-flex align-items-center">
-      <i class="bi bi-envelope d-flex align-items-center">
+   <div class="topbar py-2 bg-light">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Email: always visible -->
+      <div class="col-12 col-md d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
+        <i class="bi bi-envelope me-2"></i>
         <a href="mailto:operations@axiommm.com">operations@axiommm.com</a>
-      </i>
-      <i class="bi bi-phone d-flex align-items-center ms-4">
+      </div>
+
+      <!-- Phone: hidden on phones -->
+      <div class="col-12 col-md d-none d-md-flex justify-content-center justify-content-md-center align-items-center mb-2 mb-md-0">
+        <i class="bi bi-phone me-2"></i>
         <span>(888) 367-1850</span>
-      </i>
-      <i class="bi bi-geo-alt d-flex align-items-center ms-4">
-        <span>
-          P.O. Box 67,
-          Newbury Park, CA 91319
-        </span>
-      </i>
+      </div>
+
+      <!-- Address: hidden on phones -->
+      <div class="col-12 col-md d-none d-md-flex justify-content-center justify-content-md-end align-items-center">
+        <i class="bi bi-geo-alt me-2"></i>
+        <span>P.O. Box 67, Newbury Park, CA 91319</span>
+      </div>
     </div>
   </div>
 </div>
 
-<!--
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="operations@axiommm.com">operations@axiommm.com
 
-          </a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>(888) 367-1850
-
-          </span></i>
-        </div>
-    
-        </div>
-      </div>
-    -->
     </div><!-- End Top Bar -->
     <style>
       /* Logo Styling */
@@ -144,6 +136,19 @@
 
   </header>
 
+  <style>
+    @media (max-width: 767.98px) {
+  .contact-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info i {
+    margin: 0 0 10px 0;
+  }
+}
+
+  </style>
   <main class="main">
 <section id="hero" class="hero section light-background">
   <img src="assets/img/hero-bg.jpg" alt="Healthcare professionals working together" class="img-fluid" data-aos="fade-in">
@@ -613,6 +618,7 @@ function toggleJobs() {
     </div>
   </div>
 </section>
+
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
