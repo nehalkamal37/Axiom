@@ -4,19 +4,21 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Careers - Axiom Medical Management</title>
+  <title>Axiom Medical Management</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/Full Axiom Logo.png" style="width: 222px; height: 222px;" rel="icon">
   <link href="assets/img/Full Axiom Logo.png" rel="apple-touch-icon">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -30,326 +32,50 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="subsi.css" rel="stylesheet">
   <link href="career.css" rel="stylesheet">
+  <link href="styles/home.css" rel="stylesheet">
+ 
 
+  <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+  <!-- End Google Tag Manager -->
 
 </head>
-<style>
- 
-body{
-  position: sticky;
-  top: 0;
-  z-index: 9999;
-  color: var(--default-color);
-}
-/* Main Content Styles */
-.content {
-  margin-top: 120px;
-}
 
-/* Left Column (Why Box) */
-.why-box {
-  background: #007bff; /* Blue background */
-  color: #fff; /* White text */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.why-box a {
-  display: inline-block;
-  margin: 10px 5px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-}
-
-
-.btn-primary {
-  background-color: #e4e9f0; /* Soft light blue-gray background */
-  background: linear-gradient(145deg, #fff, #e6ebf0); /* Shadow-like gradient */
-
-  color: #333; /* Dark gray text for better readability */
-  border: 1px solid #ccd1d9; /* Add a subtle border */
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 2px; /* Slightly rounded corners for a casual feel */
-  text-decoration: none;
-  font-weight: 500; /* Medium font weight for a clean look */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary:hover {
-  background-color: #d7dce4; /* Slightly darker on hover */
-  background: linear-gradient(145deg, #f7fafc, #cfd4d9); /* Reverse gradient on hover */
-
-  transform: translateY(-2px); /* Subtle lift effect on hover */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a shadow for depth */
-}
-
-.btn-primary:active {
-  background-color: #ccd1d9; /* Darker for pressed effect */
-  transform: translateY(1px); /* Button sinks slightly when clicked */
-  box-shadow: none; /* Remove shadow when active */
-}
-
-.btn-secondary {
-  display: inline-block;
-  background: linear-gradient(145deg, #cfd4d9, #e6ebf0); /* Shadow-like gradient */
-  background: linear-gradient(145deg, #96a0aa, #c8cfd6); /* Shadow-like gradient */
-  background: linear-gradient(145deg, #fff, #c8cfd6); /* Shadow-like gradient */
-
-  color: #333; /* Dark text for readability */
-  border: 1px solid #9da5b3; /* Light border for definition */
-  padding: 12px 25px; /* Padding for size */
-  font-size: 1rem; /* Font size for readability */
-  font-weight: 500; /* Medium font weight */
-  border-radius: 8px; /* Rounded corners */
-  text-decoration: none; /* Remove underline */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
-  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.btn-secondary:hover {
-  background: linear-gradient(145deg, #e6ebf0, #cfd4d9); /* Reverse gradient on hover */
-  transform: translateY(-2px); /* Lift effect */
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
-}
-
-.btn-secondary:active {
-  background: linear-gradient(145deg, #ccd1d9, #bfc6cf); /* Darker gradient for active state */
-  transform: translateY(1px); /* Slightly sunken effect */
-  box-shadow: none; /* Remove shadow when active */
-}
-
-
-/* Right Column (Icon Boxes) */
-.icon-box {
-  background: #fff; /* White background */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.icon-box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-}
-
-.icon-box i {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.icon-box h4 {
-  font-size: 1.1rem;
-  margin-bottom: 10px;
-}
-
-.icon-box p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .icon-box {
-    margin-bottom: 20px;
-  }
-}
-.icon-box {
-  background: #fff; /* White background */
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
-  display: flex; /* Use Flexbox */
-  flex-direction: column; /* Stack content vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
-  height: 80%; /* Ensure equal height for all boxes */
-}
-
-.icon-box i {
-  font-size: 2rem;
-  color: #007bff;
-  margin-bottom: 10px;
-}
-
-.icon-box h4 {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.icon-box p {
-  font-size: 1rem;
-  color: #555;
-}
-.row.g-3 {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.icon-box {
-  flex: 1 1 calc(25% - 20px); /* Adjusts box width based on the screen size */
-  margin: 10px;
-}
-
-
-
-</style>
-<style>
-/* General Section Styling */
-.about.section {
-  padding: 60px 0;
-  background: #f9f9f9;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  color: #007bff;
-}
-
-.section-intro {
-  font-size: 1.2rem;
-  text-align: center;
-  margin-bottom: 40px;
-  color: #555;
-  line-height: 1.8;
-}
-
-/* Info Cards */
-.info-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: space-between;
-}
-
-.info-card {
-  background: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  padding: 20px;
-  flex: 1 1 calc(50% - 20px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.info-card:hover {
-  transform: translateY(-5px);
-  background: linear-gradient(145deg, #eceff1, #c8cfd6); /* Shadow-like gradient */
-
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.info-card h4 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-.info-card p, .info-card ul {
-  font-size: 1rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.info-card ul {
-  padding-left: 20px;
-  list-style: disc;
-}
-
-.info-card ul li {
-  margin-bottom: 8px;
-
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .info-card {
-    flex: 1 1 100%;
-  }
-
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .section-intro {
-    font-size: 1rem;
-  }
-}
-
-/*newwwwwwwwwwwww*/
-.info-card ul {
-  padding-left: 20px; /* Space for bullet alignment */
-  list-style: disc;
-  margin: 0; /* Remove default margin */
-  line-height: 1.0; /* Tighter line spacing between list items */
-}
-
-.info-card ul li {
-  margin-bottom: 5px; /* Reduce space between items */
-  font-size: 1rem; /* Adjust font size */
-}
-
-.info-card ul li strong {
-  color: #1a6fc9; /* Highlighted color for bold terms */
-  font-weight: bold;
-  text-transform: uppercase; /* Make bold terms uppercase for emphasis */
-}
-
-/*background thing*/
-
-
-.hero .welcome {
-  background: rgba(0, 0, 0, 0.5); /* Black background with 50% transparency */
-  color: #fff; /* White text for contrast */
-  padding: 20px;
-  border-radius: 10px; /* Rounded corners */
-}
-
-.hero .welcome h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #fcf2f2;
-}
-
-.hero .welcome h4 {
-  font-size: 1.2rem;
-  margin-top: 10px;
-}
-
-</style>
 <body class="index-page">
 
   <header id="header" class="header sticky-top">
 
-    <div class="topbar d-flex align-items-center">
-      <div class="container d-flex justify-content-center justify-content-md-between">
-        <div class="contact-info d-flex align-items-center">
-          <i class="bi bi-envelope d-flex align-items-center"><a href="operations@axiommm.com">operations@axiommm.com
-
-          </a></i>
-          <i class="bi bi-phone d-flex align-items-center ms-4"><span>(888) 367-1850 
-
-          </span></i>
-        </div>
-    <!--    <div class="social-links d-none d-md-flex align-items-center">
-          <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-    -->
-        </div>
+   <div class="topbar py-2 bg-light">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      <!-- Email: always visible -->
+      <div class="col-12 col-md d-flex justify-content-center justify-content-md-start align-items-center mb-2 mb-md-0">
+        <i class="bi bi-envelope me-2"></i>
+        <a href="mailto:operations@axiommm.com">operations@axiommm.com</a>
       </div>
+
+      <!-- Phone: hidden on phones -->
+      <div class="col-12 col-md d-none d-md-flex justify-content-center justify-content-md-center align-items-center mb-2 mb-md-0">
+        <i class="bi bi-phone me-2"></i>
+        <span>(888) 367-1850</span>
+      </div>
+
+      <!-- Address: hidden on phones -->
+      <div class="col-12 col-md d-none d-md-flex justify-content-center justify-content-md-end align-items-center">
+        <i class="bi bi-geo-alt me-2"></i>
+        <span>P.O. Box 67, Newbury Park, CA 91319</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
     </div><!-- End Top Bar -->
     <style>
       /* Logo Styling */
@@ -379,36 +105,47 @@ body{
       }
     </style>
     
-    <div class="branding d-flex align-items-center">
+    <nav class="navbar navbar-expand-md custom-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <a href="index.html" class="d-flex align-items-center logo-link text-decoration-none">
+      <img src="assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo" style="max-height:40px;">
+      <span class="sitename ms-2">Axiom Medical Management</span>
+    </a>
 
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo d-flex align-items-center me-auto">
-          <!-- Uncomment the line below if you also wish to use an image logo -->
-          <img src="assets/img/Abbreviated Axiom Logo.png" class="logo" alt="Axiom Logo">
-          <h4 class="sitename">Axiom Medical Management</h4>
-        </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="index.html#hero" >Home<br></a></li>
-            <li><a href="services/about.html">About</a></li>
-            <li><a href="services/services.html">Services</a></li>
-            <li><a class="active" href="index.html#careers">Careers</a></li>
-            <li><a href="index.html#news">News</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-            <li><a href="services/practice.html">Practices</a></li>
-            <li><a href="index.html#privacy">Policies</a></li>
+    <div class="collapse navbar-collapse" id="navbarNav" >
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link " href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="services/about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services/services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link active" href="careers.html">Careers</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#news">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="services/practice.html">Practices</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#privacy">Policies</a></li>
+          
+      </ul>
+    </div>
+  </div>
+</nav>
 
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-
-
-      </div>
+     
 
     </div>
 
   </header>
+
+
 
   <main class="main">
 
@@ -418,6 +155,28 @@ body{
   <!--  neeeeee   -->
 
   <style>
+.custom-navbar .logo {
+  max-height: 50px;
+}
+
+.custom-navbar .sitename {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+  font-size: 0.95rem;
+  color: #444;
+  padding: 0.5rem 0.75rem;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover,
+.custom-navbar .navbar-nav .nav-link.active {
+  color: #007bff;
+}
+</style>
+<style>
+
     /* Hero Section - Apple-Inspired */
     .career-hero {
       background: black;
